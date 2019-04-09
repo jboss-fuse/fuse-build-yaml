@@ -38,9 +38,10 @@ builds:
   externalScmUrl: ssh://git@github.com/jboss-fuse/karaf.git
   scmRevision: karaf-${version.karaf}
   customPmeParameters:
-  - '-DdependencyExclusion.com.sun.xml.bind:*@*='
-  - '-DdependencyOverride.org.ow2.asm:*@*='
-  - '-DprojectMetaSkip=true'
+    - '-DdependencyExclusion.com.sun.xml.bind:*@*='
+    - '-DdependencyExclusion.javax.xml.bind:*@*='
+    - '-DdependencyOverride.org.ow2.asm:*@*='
+    - '-DprojectMetaSkip=true'
 
 - name: kubernetes-model-2.0.10-${version.fuse.prefix}
   project: jboss-fuse/kubernetes-model
@@ -81,6 +82,7 @@ builds:
   scmRevision: cxf-${version.cxf}
   customPmeParameters:
     - '-DdependencyOverride.javax.ws.rs:*@*=2.1.1'
+    - '-DdependencyOverride.com.sun.xml.bind:*@*='
     - '-DdependencyOverride.javax.xml.bind:*@*='
     - '-DdependencyOverride.org.codehaus.woodstox:*@*='
     - '-DdependencyOverride.org.apache.abdera:*@*='
@@ -127,6 +129,7 @@ builds:
     - '-DdependencyExclusion.com.fasterxml.jackson.jaxrs:*@*='
     - '-DdependencyExclusion.com.fasterxml.jackson.module:*@*='
     - '-DdependencyExclusion.com.sun.xml.bind:*@*='
+    - '-DdependencyExclusion.javax.xml.bind:*@*='
     - '-DdependencyExclusion.com.github.everit-org.json-schema:*@*=1.6.0.redhat-1'
     - '-DdependencyExclusion.org.codehaus.woodstox:*@*='
     - '-DdependencyExclusion.org.apache.abdera:*@*='
