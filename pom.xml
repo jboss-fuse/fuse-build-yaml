@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.4.0.redhat-SNAPSHOT</version>
+  <version>7.4.0.sb2-redhat-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -323,37 +323,37 @@
               <artifacts>
                 <!-- Fuse and FIS Original (template) -->
                 <artifact>
-                  <file>target/extra-resources/fusefis.yaml</file>
+                  <file>target/extra-resources/springboot2.yaml</file>
                   <type>yaml</type>
-                  <classifier>fuse-fis-yaml</classifier>
+                  <classifier>springboot2-yaml</classifier>
                 </artifact>
                 <!-- Fuse and FIS Fixed -->
                 <artifact>
-                  <file>target/extra-resources/fusefis.yaml.modified</file>
+                  <file>target/extra-resources/springboot2.yaml.modified</file>
                   <type>yaml</type>
-                  <classifier>fuse-fis-modified-yaml</classifier>
+                  <classifier>springboot2-modified-yaml</classifier>
                 </artifact>
                 <!-- Fuse and FIS Deptree -->
                 <artifact>
-                  <file>target/extra-resources/fusefis.yaml.html</file>
+                  <file>target/extra-resources/springboot2.yaml.html</file>
                   <type>html</type>
-                  <classifier>fuse-fis-deptree</classifier>
+                  <classifier>springboot2-deptree</classifier>
                 </artifact>
 
                 <artifact>
-                  <file>target/extra-resources/staging.yaml</file>
+                  <file>target/extra-resources/sb2staging.yaml</file>
                   <type>yaml</type>
                   <classifier>staging-yaml</classifier>
                 </artifact>
                 <!-- Fuse and FIS Fixed -->
                 <artifact>
-                  <file>target/extra-resources/staging.yaml.modified</file>
+                  <file>target/extra-resources/sb2staging.yaml.modified</file>
                   <type>yaml</type>
                   <classifier>staging-modified-yaml</classifier>
                 </artifact>
                 <!-- Fuse and FIS Deptree -->
                 <artifact>
-                  <file>target/extra-resources/staging.yaml.html</file>
+                  <file>target/extra-resources/sb2staging.yaml.html</file>
                   <type>html</type>
                   <classifier>staging-deptree</classifier>
                 </artifact>
@@ -414,36 +414,14 @@
         <version>1.0</version>
         <executions>
           <execution>
-            <id>copy-file-fusefis</id>
+            <id>copy-file-springboot2</id>
             <phase>prepare-package</phase>
             <goals>
               <goal>copy</goal>
             </goals>
             <configuration>
-              <sourceFile>target/extra-resources/fusefis.yaml</sourceFile>
-              <destinationFile>target/extra-resources/staging.yaml</destinationFile>
-            </configuration>
-          </execution>
-          <execution>
-            <id>copy-file-ipaas</id>
-            <phase>prepare-package</phase>
-            <goals>
-              <goal>copy</goal>
-            </goals>
-            <configuration>
-              <sourceFile>target/extra-resources/ipaas.yaml</sourceFile>
-              <destinationFile>target/extra-resources/ipaas-staging.yaml</destinationFile>
-            </configuration>
-          </execution>
-          <execution>
-            <id>copy-file-dv</id>
-            <phase>prepare-package</phase>
-            <goals>
-              <goal>copy</goal>
-            </goals>
-            <configuration>
-              <sourceFile>target/extra-resources/dv.yaml</sourceFile>
-              <destinationFile>target/extra-resources/dv-staging.yaml</destinationFile>
+              <sourceFile>target/extra-resources/springboot2.yaml</sourceFile>
+              <destinationFile>target/extra-resources/sb2staging.yaml</destinationFile>
             </configuration>
           </execution>
         </executions>
