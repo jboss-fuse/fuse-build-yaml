@@ -37,6 +37,7 @@ builds:
   scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/cxf.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/cxf.git
   scmRevision: cxf-${version.cxf}
+  buildPodMemory: 8
   customPmeParameters:
     - '-DdependencyExclusion.javax.ws.rs:*@*=2.1.1'
     - '-DdependencyOverride.javax.xml.bind:*@*='
@@ -75,6 +76,7 @@ builds:
     mvn -e -V -B -DskipTests -DfailIfNoTests=false -Dtest=false -Penable-schemagen,release,apt
     clean deploy -DkeepStagingRepositoryOnCloseRuleFailure=true -Dgpg.skip=true -pl
     '!org.apache.camel:camel-itest,!org.apache.camel.example:camel-example-swagger-xml'
+  buildPodMemory: 12
   customPmeParameters:
     - '-DprojectMetaSkip=true'
     - '-DdependencyExclusion.io.vertx:*@*=3.5.1.redhat-004'
