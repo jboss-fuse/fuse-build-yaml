@@ -5,7 +5,7 @@ product:
   issueTrackerUrl: http://issues.jboss.org/browse/ENTESB
 version: ${version.fuse.prefix}
 milestone: ${build.milestone}
-group: Fuse Standalone and FIS 7.3 ${build.milestone}
+group: Fuse Standalone and FIS 7.3.1 ${build.milestone}
 defaultBuildParameters:
   environmentId: 1
   buildScript: 'mvn -e -V -B -DskipTests -DfailIfNoTests=false -Dtest=false clean
@@ -100,6 +100,7 @@ builds:
     - '-DdependencyOverride.org.bouncycastle:*@*='
     - '-DdependencyOverride.org.apache.velocity:*@*='
     - '-DprojectMetaSkip=true'
+  buildPodMemory: 8
   buildScript: >
     mvn -e -V -B -DskipTests -Dassembly.tarLongFileMode=posix -DfailIfNoTests=false -Dtest=false -Dcxf.public.suffix.list.url=http://dev138.mw.lab.eng.bos.redhat.com/miscellaneous/effective_tld_names.dat -Pdeploy clean deploy
   dependencies:
@@ -123,6 +124,7 @@ builds:
     mvn -e -V -B -DskipTests -DfailIfNoTests=false -Dtest=false -Penable-schemagen,release,apt
     clean deploy -DkeepStagingRepositoryOnCloseRuleFailure=true -Dgpg.skip=true -pl
     '!org.apache.camel:camel-itest,!org.apache.camel.example:camel-example-swagger-xml'
+  buildPodMemory: 12
   customPmeParameters:
     - '-DprojectMetaSkip=true'
     - '-DdependencyExclusion.io.vertx:*@*=3.5.1.redhat-004'

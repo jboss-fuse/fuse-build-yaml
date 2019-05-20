@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.3.0.redhat-SNAPSHOT</version>
+  <version>7.3.1.redhat-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -40,8 +40,8 @@
   </prerequisites>
 
   <properties>
-    <version.fuse.prefix>7.3.0</version.fuse.prefix>
-    <version.sprint.milestone>42</version.sprint.milestone>
+    <version.fuse.prefix>7.3.1</version.fuse.prefix>
+    <version.sprint.milestone>44</version.sprint.milestone>
     <build.number>1</build.number>
     <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
     <version.syndesis>1.6.4.fuse-730002</version.syndesis>
@@ -83,8 +83,8 @@
     <version.karaf-quickstarts>7.3.0.fuse-730010</version.karaf-quickstarts>
 
     <!-- build information -->
-    <build.stage>CR4</build.stage>
-    <build.milestone>CR4</build.milestone>
+    <build.stage>CR1</build.stage>
+    <build.milestone>CR1</build.milestone>
     <port.number>49168</port.number>
 
     <!-- pom manipulation scripts version (global) -->
