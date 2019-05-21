@@ -26,7 +26,7 @@ builds:
     - '-DdependencyOverride.org.ow2.asm:*@*='
     - '-DprojectMetaSkip=true'
   buildScript: >
-    export REG=http://mwnodereg.hosts.mwqe.eng.bos.redhat.com:49168
+    export REG=http://mwnodereg.hosts.mwqe.eng.bos.redhat.com:49161
 
     sed -i \"s#https://registry.yarnpkg.com/#${REG}#g\" ui/yarn.lock
 
@@ -56,7 +56,7 @@ builds:
 
     export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD
 
-    export REG=http://mwnodereg.hosts.mwqe.eng.bos.redhat.com:49195
+    export REG=http://mwnodereg.hosts.mwqe.eng.bos.redhat.com:49161
 
     sed -i \"s#resolved \"https:\/\/registry.yarnpkg.com\/#resolved \"${REG}\/#g\" app/ui/yarn.lock
 
