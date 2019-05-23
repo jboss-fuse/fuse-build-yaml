@@ -255,8 +255,6 @@ builds:
     - '-DdependencyOverride.com.fasterxml.jackson.core:*@*='
     - '-DprojectMetaSkip=true'
     - '-DdependencyExclusion.javax.ws.rs:*@*='
-    - '-DgroovyScripts=org.jboss.fuse.pom-manipulation:yarn-config-groovy:groovy:${version.pom-manipulation}'
-    - '-DgroovyManipulationPrecedence=FIRST'
   dependencies:
   - camel-2.21.0-${version.fuse.prefix}
   - karaf-4.2.0-${version.fuse.prefix}
