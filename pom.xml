@@ -200,10 +200,12 @@
     <apicurito.fetch.scmUrl>1</apicurito.fetch.scmUrl>
     <apicurito.push.scmUrl>1</apicurito.push.scmUrl>
     <apicurito.buildCommand>1</apicurito.buildCommand>
+    <apicurito.version>1.0.0.fuse-731002</apicurito.version>
     <redhat-fuse.tag>DUMMY-TAG-0.0.0</redhat-fuse.tag>
     <redhat-fuse.fetch.scmUrl>1</redhat-fuse.fetch.scmUrl>
     <redhat-fuse.push.scmUrl>1</redhat-fuse.push.scmUrl>
     <redhat-fuse.buildCommand>1</redhat-fuse.buildCommand>
+    <version.apicurito-generator>1.0.0.fuse-731002</version.apicurito-generator>
     <fuse-apicurito-generator.tag>DUMMY-TAG-0.0.0</fuse-apicurito-generator.tag>
     <fuse-apicurito-generator.fetch.scmUrl>1</fuse-apicurito-generator.fetch.scmUrl>
     <fuse-apicurito-generator.push.scmUrl>1</fuse-apicurito-generator.push.scmUrl>
