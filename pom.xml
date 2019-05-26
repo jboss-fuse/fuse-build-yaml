@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.4.0.redhat-SNAPSHOT</version>
+  <version>7.4.0.fuse-740002</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -45,8 +45,8 @@
     <build.number>1</build.number>
     <dollar>$</dollar>
     <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
-    <version.syndesis>1.6.4.fuse-730002</version.syndesis>
-    <version.atlasmap>1.39.6.fuse-73000</version.atlasmap>
+    <version.syndesis>1.7.0.fuse-740002</version.syndesis>
+    <version.atlasmap>1.40.0.fuse-740002</version.atlasmap>
     <version.camel>2.21.0.fuse-000096</version.camel>
     <version.camel.extra>2.21.0.fuse-000073</version.camel.extra>
     <version.fuse.extras.distro>7.2.0.fuse-720046</version.fuse.extras.distro>
@@ -67,7 +67,7 @@
     <version.hawtio.integration>1.0.0.fuse-000034</version.hawtio.integration>
 
     <version.kubernetes.model>2.0.9.fuse-000020</version.kubernetes.model>
-    <version.kubernetes.client>3.0.3.fuse-000056</version.kubernetes.client>
+    <version.kubernetes.client>3.1.12.fuse-740006</version.kubernetes.client>
 
     <version.application.templates>2.1.fuse-000087</version.application.templates>
     <version.cxf.xjc-utils>3.1.1.fuse-000118</version.cxf.xjc-utils>
@@ -75,7 +75,7 @@
     <version.spring-cloud-kubernetes>0.1.6.fuse-000056</version.spring-cloud-kubernetes>
     <version.wsdl2rest>0.7.0.fuse-000071</version.wsdl2rest>
 
-    <docker.maven.plugin.version>0.23.0.fuse-000051</docker.maven.plugin.version>
+    <docker.maven.plugin.version>0.23.0.fuse-740004</docker.maven.plugin.version>
     <version.fuse.patch>3.0.0.fuse-000069</version.fuse.patch>
     <version.wildfly.camel.examples>5.1.0.fuse-000047</version.wildfly.camel.examples>
     <version.fuse.eap>7.0.1.fuse-000001</version.fuse.eap>
