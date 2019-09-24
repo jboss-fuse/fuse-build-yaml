@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.5.0.redhat-SNAPSHOT</version>
+  <version>7.5.0.fuse-dv-750026</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -50,36 +50,36 @@
     <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
     <version.syndesis>1.6.4.fuse-730002</version.syndesis>
     <version.atlasmap>1.40.0.fuse-740007</version.atlasmap>
-    <version.camel>2.21.0.fuse-000096</version.camel>
-    <version.camel.extra>2.21.0.fuse-000073</version.camel.extra>
-    <version.fuse.extras.distro>7.2.0.fuse-720046</version.fuse.extras.distro>
-    <version.cxf>3.1.11.fuse-000265</version.cxf>
-    <version.fabric8>3.0.8.fuse-000051</version.fabric8>
+    <version.camel>2.21.0.fuse-750029</version.camel>
+    <version.camel.extra>2.21.0.fuse-750029</version.camel.extra>
+    <version.fuse.extras.distro>7.5.0.fuse-750029</version.fuse.extras.distro>
+    <version.cxf>3.2.7.fuse-750022</version.cxf>
+    <version.fabric8>3.0.11.fuse-750027</version.fabric8>
     <version.kubernetes.assertions>4.1.0.fuse-sb2-750002</version.kubernetes.assertions>
-    <version.fabric8.maven.plugin>3.5.33.fuse-000075</version.fabric8.maven.plugin>
-    <version.bom.fuse>7.0.1.fuse-000002</version.bom.fuse>
-    <version.karaf>4.2.0.fuse-000262</version.karaf>
-    <version.bom.wildfly.camel>5.1.0.fuse-000071</version.bom.wildfly.camel>
-    <version.fusesource.camel.sap>7.0.1.fuse-000002</version.fusesource.camel.sap>
-    <karaf.plugin.version>4.2.0.fuse-000262</karaf.plugin.version>
-    <narayana-spring-boot.version>1.0.3.fuse-730042</narayana-spring-boot.version>
+    <version.fabric8.maven.plugin>3.5.33.fuse-750025</version.fabric8.maven.plugin>
+    <version.bom.fuse>7.5.0.fuse-750029</version.bom.fuse>
+    <version.karaf>4.2.6.fuse-750013</version.karaf>
+    <version.bom.wildfly.camel>5.3.0.fuse-750020</version.bom.wildfly.camel>
+    <version.fusesource.camel.sap>7.5.0.fuse-750027</version.fusesource.camel.sap>
+    <karaf.plugin.version>4.2.6.fuse-750013</karaf.plugin.version>
+    <narayana-spring-boot.version>1.0.2.fuse-750025</narayana-spring-boot.version>
     <spring-boot-camel-xa.version>1.0.0.fuse-730038</spring-boot-camel-xa.version>
     <application-templates.version>2.1.fuse-000091</application-templates.version>
     <fuse-bom.version>7.1.0.fuse-000005</fuse-bom.version>
-    <version.hawtio>2.0.0.fuse-000186</version.hawtio>
+    <version.hawtio>2.0.0.fuse-750016</version.hawtio>
     <version.hawtio.online>1.0.0.fuse-000054</version.hawtio.online>
     <version.hawtio.integration>1.0.0.fuse-000034</version.hawtio.integration>
 
-    <version.kubernetes.model>2.0.9.fuse-000020</version.kubernetes.model>
-    <version.kubernetes.client>3.0.3.fuse-000056</version.kubernetes.client>
+    <version.kubernetes.model>2.0.10.fuse-750008</version.kubernetes.model>
+    <version.kubernetes.client>3.1.12.fuse-750018</version.kubernetes.client>
 
     <version.application.templates>2.1.fuse-000087</version.application.templates>
-    <version.cxf.xjc-utils>3.1.1.fuse-000118</version.cxf.xjc-utils>
+    <version.cxf.xjc-utils>3.2.4.fuse-750011</version.cxf.xjc-utils>
     <version.ipaas.quickstarts>2.2.0.fuse-000098</version.ipaas.quickstarts>
-    <version.spring-cloud-kubernetes>0.1.6.fuse-000056</version.spring-cloud-kubernetes>
-    <version.wsdl2rest>0.7.0.fuse-000071</version.wsdl2rest>
+    <version.spring-cloud-kubernetes>0.1.6.fuse-750018</version.spring-cloud-kubernetes>
+    <version.wsdl2rest>0.8.0.fuse-750029</version.wsdl2rest>
 
-    <docker.maven.plugin.version>0.23.0.fuse-000051</docker.maven.plugin.version>
+    <docker.maven.plugin.version>0.23.0.fuse-750006</docker.maven.plugin.version>
     <version.fuse.patch>3.0.0.fuse-000069</version.fuse.patch>
     <version.wildfly.camel.examples>5.1.0.fuse-000047</version.wildfly.camel.examples>
     <version.fuse.eap>7.0.1.fuse-000001</version.fuse.eap>
@@ -90,7 +90,7 @@
     <!-- build information -->
     <build.milestone>CR1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Ffusesource-jenkins.rhev-ci-vms.eng.rdu2.redhat.com%2Fjob%2Ffuse-7.5-dv%2F46%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
@@ -204,7 +204,7 @@
     <wildfly-camel.fetch.scmUrl>1</wildfly-camel.fetch.scmUrl>
     <wildfly-camel.push.scmUrl>1</wildfly-camel.push.scmUrl>
     <wildfly-camel.buildCommand>1</wildfly-camel.buildCommand>
-    <apicurito.version>1</apicurito.version>
+    <apicurito.version>1.0.1.fuse-750021</apicurito.version>
     <apicurito.tag>DUMMY-TAG-0.0.0</apicurito.tag>
     <apicurito.fetch.scmUrl>1</apicurito.fetch.scmUrl>
     <apicurito.push.scmUrl>1</apicurito.push.scmUrl>
@@ -253,32 +253,32 @@
     <syndesis.buildCommand>1</syndesis.buildCommand>
 
     <!-- DV project -->
-    <version.teiid>1</version.teiid>
-    <teiid.tag>DUMMY-TAG-0.0.0</teiid.tag>
-    <teiid.fetch.scmUrl>1</teiid.fetch.scmUrl>
-    <teiid.push.scmUrl>1</teiid.push.scmUrl>
-    <teiid.buildCommand>1</teiid.buildCommand>
-    <version.teiid-spring-boot>1</version.teiid-spring-boot>
-    <teiid-spring-boot.tag>DUMMY-TAG-0.0.0</teiid-spring-boot.tag>
-    <teiid-spring-boot.fetch.scmUrl>1</teiid-spring-boot.fetch.scmUrl>
-    <teiid-spring-boot.push.scmUrl>1</teiid-spring-boot.push.scmUrl>
-    <teiid-spring-boot.buildCommand>1</teiid-spring-boot.buildCommand>
-    <version.teiid-openshift-examples>1</version.teiid-openshift-examples>
-    <teiid-openshift-examples.tag>1</teiid-openshift-examples.tag>
-    <teiid-openshift-examples.fetch.scmUrl>1</teiid-openshift-examples.fetch.scmUrl>
-    <teiid-openshift-examples.push.scmUrl>1</teiid-openshift-examples.push.scmUrl>
-    <teiid-openshift-examples.buildCommand>1</teiid-openshift-examples.buildCommand>
-    <version.teiid-syndesis>1</version.teiid-syndesis>
-    <teiid-syndesis.tag>1</teiid-syndesis.tag>
-    <teiid-syndesis.fetch.scmUrl>1</teiid-syndesis.fetch.scmUrl>
-    <teiid-syndesis.push.scmUrl>1</teiid-syndesis.push.scmUrl>
-    <teiid-syndesis.buildCommand>1</teiid-syndesis.buildCommand>
+    <version.teiid>12.3.1.fuse-750003</version.teiid>
+    <teiid.tag>7.5-12.3.x</teiid.tag>
+    <teiid.fetch.scmUrl>git%40github.com%3Ateiid%2Fteiid.git</teiid.fetch.scmUrl>
+    <teiid.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fteiid.git</teiid.push.scmUrl>
+    <teiid.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-Pcore-release+clean+install++-Dcheckstyle.skip+-Dgpg.skip+-U</teiid.buildCommand>
+    <version.teiid-spring-boot>1.2.0.fuse-750029</version.teiid-spring-boot>
+    <teiid-spring-boot.tag>master</teiid-spring-boot.tag>
+    <teiid-spring-boot.fetch.scmUrl>git%40github.com%3Ateiid%2Fteiid-spring-boot.git</teiid-spring-boot.fetch.scmUrl>
+    <teiid-spring-boot.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fteiid-spring-boot.git</teiid-spring-boot.push.scmUrl>
+    <teiid-spring-boot.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-Prelease+clean+install+-Dcheckstyle.skip+-Dgpg.skip+-U</teiid-spring-boot.buildCommand>
+    <version.teiid-openshift-examples>1.2.0.fuse-750020</version.teiid-openshift-examples>
+    <teiid-openshift-examples.tag>master</teiid-openshift-examples.tag>
+    <teiid-openshift-examples.fetch.scmUrl>git%40github.com%3Ateiid%2Fteiid-openshift-examples.git</teiid-openshift-examples.fetch.scmUrl>
+    <teiid-openshift-examples.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fteiid-openshift-examples.git</teiid-openshift-examples.push.scmUrl>
+    <teiid-openshift-examples.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+</teiid-openshift-examples.buildCommand>
+    <version.teiid-syndesis>0.0.6.fuse-750020</version.teiid-syndesis>
+    <teiid-syndesis.tag>master</teiid-syndesis.tag>
+    <teiid-syndesis.fetch.scmUrl>git%40github.com%3Ateiid%2Fteiid-syndesis.git</teiid-syndesis.fetch.scmUrl>
+    <teiid-syndesis.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fteiid-syndesis.git</teiid-syndesis.push.scmUrl>
+    <teiid-syndesis.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-Pcore-release+clean+install+-Dcheckstyle.skip+-DskipTests%3Dtrue+-U</teiid-syndesis.buildCommand>
 
-    <version.oreva>1</version.oreva>
-    <oreva.tag>DUMMY-TAG-0.0.0</oreva.tag>
-    <oreva.fetch.scmUrl>1</oreva.fetch.scmUrl>
-    <oreva.push.scmUrl>1</oreva.push.scmUrl>
-    <oreva.buildCommand>1</oreva.buildCommand>
+    <version.oreva>1.0.1.fuse-750016</version.oreva>
+    <oreva.tag>1.0.x</oreva.tag>
+    <oreva.fetch.scmUrl>git%40github.com%3Ateiid%2Foreva.git</oreva.fetch.scmUrl>
+    <oreva.push.scmUrl>git%40github.com%3Ajboss-fuse%2Foreva.git</oreva.push.scmUrl>
+    <oreva.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+-Dcheckstyle.skip+-Dgpg.skip</oreva.buildCommand>
 
   </properties>
 
