@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>8.0.0.redhat-SNAPSHOT</version>
+  <version>8.0.0.fuse-base-800002</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
