@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>8.0.0.redhat-SNAPSHOT</version>
+  <version>8.0.0.fuse-base-800013</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -50,12 +50,12 @@
     <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
     <version.syndesis>1.6.4.fuse-730002</version.syndesis>
     <version.atlasmap>1.40.0.fuse-740007</version.atlasmap>
-    <version.camel>2.21.0.fuse-000096</version.camel>
-    <version.camel-quarkus>0.3.2.fuse-800008</version.camel-quarkus>
-    <version.camel-kafka-connector>0.0.1.fuse-800001</version.camel-kafka-connector>
+    <version.camel>3.0.0.fuse-jdk11-800005</version.camel>
+    <version.camel-quarkus>1.1.0.fuse-jdk11-800006</version.camel-quarkus>
+    <version.camel-kafka-connector>0.0.1.fuse-jdk11-800004</version.camel-kafka-connector>
     <version.camel.extra>2.21.0.fuse-000073</version.camel.extra>
     <version.fuse.extras.distro>7.2.0.fuse-720046</version.fuse.extras.distro>
-    <version.cxf>3.1.11.fuse-000265</version.cxf>
+    <version.cxf>3.3.6.fuse-jdk11-800004</version.cxf>
     <version.fabric8>3.0.8.fuse-000051</version.fabric8>
     <version.kubernetes.assertions>4.1.0.fuse-sb2-750002</version.kubernetes.assertions>
     <version.fabric8.maven.plugin>3.5.33.fuse-000075</version.fabric8.maven.plugin>
@@ -93,7 +93,7 @@
     <!-- build information -->
     <build.milestone>ER1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Ffusesource-jenkins.rhev-ci-vms.eng.rdu2.redhat.com%2Fjob%2Ffuse-8.0-base-jdk11%2F57%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
@@ -128,14 +128,14 @@
     <cxf-xjc-utils.fetch.scmUrl>1</cxf-xjc-utils.fetch.scmUrl>
     <cxf-xjc-utils.push.scmUrl>1</cxf-xjc-utils.push.scmUrl>
     <cxf-xjc-utils.buildCommand>1</cxf-xjc-utils.buildCommand>
-    <cxf.tag>DUMMY-TAG-0.0.0</cxf.tag>
-    <cxf.fetch.scmUrl>1</cxf.fetch.scmUrl>
-    <cxf.push.scmUrl>1</cxf.push.scmUrl>
+    <cxf.tag>3.3.x.redhat-8-x</cxf.tag>
+    <cxf.fetch.scmUrl>git%40github.com%3Ajboss-fuse%2Fcxf.git</cxf.fetch.scmUrl>
+    <cxf.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fcxf.git</cxf.push.scmUrl>
     <cxf.buildCommand>1</cxf.buildCommand>
-    <camel.tag>DUMMY-TAG-0.0.0</camel.tag>
-    <camel.fetch.scmUrl>1</camel.fetch.scmUrl>
-    <camel.push.scmUrl>1</camel.push.scmUrl>
-    <camel.buildCommand>1</camel.buildCommand>
+    <camel.tag>camel-3.0-branch</camel.tag>
+    <camel.fetch.scmUrl>git%40github.com%3Ajboss-fuse%2Fcamel.git</camel.fetch.scmUrl>
+    <camel.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fcamel.git</camel.push.scmUrl>
+    <camel.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-Penable-schemagen%2Crelease%2Capt+clean+install+-DkeepStagingRepositoryOnCloseRuleFailure%3Dtrue++-pl+%27%21docs%2C%21examples%27+</camel.buildCommand>
     <kubernetes.assertions.tag>DUMMY-TAG-0.0.0</kubernetes.assertions.tag>
     <kubernetes.assertions.fetch.scmUrl>1</kubernetes.assertions.fetch.scmUrl>
     <kubernetes.assertions.push.scmUrl>1</kubernetes.assertions.push.scmUrl>
