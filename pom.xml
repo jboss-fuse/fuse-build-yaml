@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.6.0.redhat-SNAPSHOT</version>
+  <version>7.6.0.fuse-ipaas-760015</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -48,25 +48,25 @@
     <build.number>1</build.number>
     <dollar>$</dollar>
     <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
-    <version.syndesis>1.6.4.fuse-730002</version.syndesis>
-    <version.atlasmap>1.40.0.fuse-740007</version.atlasmap>
-    <version.camel>2.21.0.fuse-000096</version.camel>
-    <version.camel.extra>2.21.0.fuse-000073</version.camel.extra>
-    <version.fuse.extras.distro>7.2.0.fuse-720046</version.fuse.extras.distro>
-    <version.cxf>3.1.11.fuse-000265</version.cxf>
-    <version.fabric8>3.0.8.fuse-000051</version.fabric8>
+    <version.syndesis>1.9.0.fuse-760015</version.syndesis>
+    <version.atlasmap>1.43.4.fuse-760003</version.atlasmap>
+    <version.camel>2.23.2.fuse-760027</version.camel>
+    <version.camel.extra>2.23.2.fuse-sb2-760026</version.camel.extra>
+    <version.fuse.extras.distro>7.6.0.fuse-sb2-760027</version.fuse.extras.distro>
+    <version.cxf>3.2.7.fuse-sb2-760020</version.cxf>
+    <version.fabric8>3.0.11.fuse-sb2-760025</version.fabric8>
     <version.kubernetes.assertions>4.1.0.fuse-sb2-750002</version.kubernetes.assertions>
-    <version.fabric8.maven.plugin>3.5.33.fuse-000075</version.fabric8.maven.plugin>
+    <version.fabric8.maven.plugin>3.5.42.fuse-760023</version.fabric8.maven.plugin>
     <version.bom.fuse>7.0.1.fuse-000002</version.bom.fuse>
-    <version.karaf>4.2.0.fuse-000262</version.karaf>
+    <version.karaf>4.2.6.fuse-760029</version.karaf>
     <version.bom.wildfly.camel>5.1.0.fuse-000071</version.bom.wildfly.camel>
-    <version.fusesource.camel.sap>7.0.1.fuse-000002</version.fusesource.camel.sap>
-    <karaf.plugin.version>4.2.0.fuse-000262</karaf.plugin.version>
-    <narayana-spring-boot.version>1.0.3.fuse-730042</narayana-spring-boot.version>
-    <spring-boot-camel-xa.version>1.0.0.fuse-730038</spring-boot-camel-xa.version>
-    <version.application-templates>2.1.fuse-000091</version.application-templates>
-    <fuse-bom.version>7.1.0.fuse-000005</fuse-bom.version>
-    <version.hawtio>2.0.0.fuse-000186</version.hawtio>
+    <version.fusesource.camel.sap>7.6.0.fuse-sb2-760026</version.fusesource.camel.sap>
+    <karaf.plugin.version>4.2.6.fuse-760029</karaf.plugin.version>
+    <narayana-spring-boot.version>2.1.1.fuse-sb2-760026</narayana-spring-boot.version>
+    <spring-boot-camel-xa.version>7.6.0.fuse-sb2-760024</spring-boot-camel-xa.version>
+    <version.application-templates>2.1.fuse-sb2-760032</version.application-templates>
+    <fuse-bom.version>7.6.0.fuse-sb2-760024</fuse-bom.version>
+    <version.hawtio>2.0.0.fuse-sb2-760019</version.hawtio>
     <version.hawtio.online>1.0.0.fuse-000054</version.hawtio.online>
     <version.hawtio.integration>1.0.0.fuse-000034</version.hawtio.integration>
 
@@ -74,17 +74,17 @@
     <version.kubernetes.client>3.0.3.fuse-000056</version.kubernetes.client>
 
     <version.application.templates>2.1.fuse-000087</version.application.templates>
-    <version.cxf.xjc-utils>3.1.1.fuse-000118</version.cxf.xjc-utils>
-    <version.ipaas.quickstarts>2.2.0.fuse-000098</version.ipaas.quickstarts>
+    <version.cxf.xjc-utils>3.2.4.fuse-760016</version.cxf.xjc-utils>
+    <version.ipaas.quickstarts>2.2.0.fuse-sb2-760031</version.ipaas.quickstarts>
     <version.spring-cloud-kubernetes>0.1.6.fuse-000056</version.spring-cloud-kubernetes>
-    <version.wsdl2rest>0.7.0.fuse-000071</version.wsdl2rest>
+    <version.wsdl2rest>0.8.fuse-sb2-760026</version.wsdl2rest>
 
-    <docker.maven.plugin.version>0.23.0.fuse-000051</docker.maven.plugin.version>
+    <docker.maven.plugin.version>0.23.0.fuse-760014</docker.maven.plugin.version>
     <version.fuse.patch>3.0.0.fuse-000069</version.fuse.patch>
     <version.wildfly.camel.examples>5.1.0.fuse-000047</version.wildfly.camel.examples>
     <version.fuse.eap>7.0.1.fuse-000001</version.fuse.eap>
 
-    <version.camel-k-runtime>1.0.0.fuse-730005</version.camel-k-runtime>
+    <version.camel-k-runtime>0.3.4.fuse-760022</version.camel-k-runtime>
     <version.karaf-quickstarts>7.3.0.fuse-730010</version.karaf-quickstarts>
     <version.apicurio-registry>7.3.0.fuse-730010</version.apicurio-registry>
 
@@ -98,7 +98,7 @@
     <!-- build information -->
     <build.milestone>ER1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Ffusesource-jenkins.rhev-ci-vms.eng.rdu2.redhat.com%2Fjob%2Ffuse-7.6-ipaas%2F61%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
@@ -108,19 +108,19 @@
     <karaf-camel-log.version>1.0.0.fuse-710004</karaf-camel-log.version>
     <karaf-camel-rest-sql.version>1.0.0.fuse-710004</karaf-camel-rest-sql.version>
     <karaf-cxf-rest.version>1.0.0.fuse-710004</karaf-cxf-rest.version>
-    <spring-boot-camel.version>1.0.0.fuse-710004</spring-boot-camel.version>
-    <spring-boot-camel-amq.version>1.0.0.fuse-710004</spring-boot-camel-amq.version>
-    <spring-boot-camel-config.version>1.0.0.fuse-710004</spring-boot-camel-config.version>
-    <spring-boot-camel-drools.version>1.0.0.fuse-710004</spring-boot-camel-drools.version>
-    <spring-boot-camel-infinispan.version>1.0.0.fuse-710004</spring-boot-camel-infinispan.version>
-    <spring-boot-camel-rest-sql.version>1.0.0.fuse-710004</spring-boot-camel-rest-sql.version>
-    <spring-boot-camel-rest-3scale.version>1.0.0.fuse-710004</spring-boot-camel-rest-3scale.version>
+    <spring-boot-camel.version>7.6.0.fuse-sb2-760038</spring-boot-camel.version>
+    <spring-boot-camel-amq.version>7.6.0.fuse-sb2-760038</spring-boot-camel-amq.version>
+    <spring-boot-camel-config.version>7.6.0.fuse-sb2-760006</spring-boot-camel-config.version>
+    <spring-boot-camel-drools.version>7.6.0.fuse-sb2-760036</spring-boot-camel-drools.version>
+    <spring-boot-camel-infinispan.version>7.6.0.fuse-sb2-760036</spring-boot-camel-infinispan.version>
+    <spring-boot-camel-rest-sql.version>7.6.0.fuse-sb2-760036</spring-boot-camel-rest-sql.version>
+    <spring-boot-camel-rest-3scale.version>7.6.0.fuse-sb2-760036</spring-boot-camel-rest-3scale.version>
     <spring-boot-camel-teiid.version>1.0.0.fuse-710004</spring-boot-camel-teiid.version>
-    <spring-boot-camel-xml.version>1.0.0.fuse-710004</spring-boot-camel-xml.version>
-    <spring-boot-cxf-jaxrs.version>1.0.0.fuse-710004</spring-boot-cxf-jaxrs.version>
-    <spring-boot-cxf-jaxws.version>1.0.0.fuse-710004</spring-boot-cxf-jaxws.version>
-    <spring-boot-cxf-jaxrs-xml.version>1.0.0.fuse-710004</spring-boot-cxf-jaxrs-xml.version>
-    <spring-boot-cxf-jaxws-xml.version>1.0.0.fuse-710004</spring-boot-cxf-jaxws-xml.version>
+    <spring-boot-camel-xml.version>7.6.0.fuse-sb2-760036</spring-boot-camel-xml.version>
+    <spring-boot-cxf-jaxrs.version>7.6.0.fuse-sb2-760036</spring-boot-cxf-jaxrs.version>
+    <spring-boot-cxf-jaxws.version>7.6.0.fuse-sb2-760036</spring-boot-cxf-jaxws.version>
+    <spring-boot-cxf-jaxrs-xml.version>7.6.0.fuse-sb2-760007</spring-boot-cxf-jaxrs-xml.version>
+    <spring-boot-cxf-jaxws-xml.version>7.6.0.fuse-sb2-760007</spring-boot-cxf-jaxws-xml.version>
 
     <!-- Tag and SCM info -->
     <karaf.tag>DUMMY-TAG-0.0.0</karaf.tag>
@@ -254,33 +254,33 @@
 
 
     <!-- Syndesis project -->
-    <atlasmap.tag>DUMMY-TAG-0.0.0</atlasmap.tag>
-    <atlasmap.fetch.scmUrl>1</atlasmap.fetch.scmUrl>
-    <atlasmap.push.scmUrl>1</atlasmap.push.scmUrl>
-    <atlasmap.buildCommand>1</atlasmap.buildCommand>
-    <syndesis.tag>DUMMY-TAG-0.0.0</syndesis.tag>
-    <syndesis.fetch.scmUrl>1</syndesis.fetch.scmUrl>
-    <syndesis.push.scmUrl>1</syndesis.push.scmUrl>
-    <syndesis.buildCommand>1</syndesis.buildCommand>
+    <atlasmap.tag>atlasmap-1.43.x</atlasmap.tag>
+    <atlasmap.fetch.scmUrl>git%40github.com%3Aatlasmap%2Fatlasmap.git</atlasmap.fetch.scmUrl>
+    <atlasmap.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fatlasmap.git</atlasmap.push.scmUrl>
+    <atlasmap.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+-U</atlasmap.buildCommand>
+    <syndesis.tag>1.9.x</syndesis.tag>
+    <syndesis.fetch.scmUrl>git%40github.com%3Ajboss-fuse%2Fsyndesis.git</syndesis.fetch.scmUrl>
+    <syndesis.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fsyndesis.git</syndesis.push.scmUrl>
+    <syndesis.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+-U+-DskipClean+-Dinvoker.skip%3Dtrue+-Dgpg.skip%3Dtrue+-f+app%2Fpom.xml</syndesis.buildCommand>
 
     <!-- DV project -->
-    <version.teiid>1</version.teiid>
+    <version.teiid>13.0.2.fuse-760012</version.teiid>
     <teiid.tag>DUMMY-TAG-0.0.0</teiid.tag>
     <teiid.fetch.scmUrl>1</teiid.fetch.scmUrl>
     <teiid.push.scmUrl>1</teiid.push.scmUrl>
     <teiid.buildCommand>1</teiid.buildCommand>
-    <version.teiid-spring-boot>1</version.teiid-spring-boot>
+    <version.teiid-spring-boot>1.3.2.fuse-760002</version.teiid-spring-boot>
     <teiid-spring-boot.tag>DUMMY-TAG-0.0.0</teiid-spring-boot.tag>
     <teiid-spring-boot.fetch.scmUrl>1</teiid-spring-boot.fetch.scmUrl>
     <teiid-spring-boot.push.scmUrl>1</teiid-spring-boot.push.scmUrl>
     <teiid-spring-boot.buildCommand>1</teiid-spring-boot.buildCommand>
-    <version.teiid-openshift-examples>1</version.teiid-openshift-examples>
+    <version.teiid-openshift-examples>1.2.0.fuse-760022</version.teiid-openshift-examples>
     <teiid-openshift-examples.tag>1</teiid-openshift-examples.tag>
     <teiid-openshift-examples.fetch.scmUrl>1</teiid-openshift-examples.fetch.scmUrl>
     <teiid-openshift-examples.push.scmUrl>1</teiid-openshift-examples.push.scmUrl>
     <teiid-openshift-examples.buildCommand>1</teiid-openshift-examples.buildCommand>
 
-    <version.oreva>1</version.oreva>
+    <version.oreva>1.0.1.fuse-760023</version.oreva>
     <oreva.tag>DUMMY-TAG-0.0.0</oreva.tag>
     <oreva.fetch.scmUrl>1</oreva.fetch.scmUrl>
     <oreva.push.scmUrl>1</oreva.push.scmUrl>
