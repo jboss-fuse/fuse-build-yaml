@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>8.0.0.redhat-SNAPSHOT</version>
+  <version>8.0.0.fuse-base-800038</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -86,7 +86,7 @@
     <version.wildfly.camel.examples>5.1.0.fuse-000047</version.wildfly.camel.examples>
     <version.fuse.eap>7.0.1.fuse-000001</version.fuse.eap>
 
-    <version.camel-k>1.0</version.camel-k>
+    <version.camel-k>1.0.0.fuse-jdk11-800027</version.camel-k>
     <version.camel-k-runtime>1.0.0.fuse-730005</version.camel-k-runtime>
     <version.karaf-quickstarts>7.3.0.fuse-730010</version.karaf-quickstarts>
     <version.apicurio-registry>7.3.0.fuse-730010</version.apicurio-registry>
@@ -94,7 +94,7 @@
     <!-- build information -->
     <build.milestone>ER1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Ffusesource-jenkins.rhev-ci-vms.eng.rdu2.redhat.com%2Fjob%2Ffuse-8.0-camelk%2F2%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
@@ -245,10 +245,10 @@
     <camel-k-runtime.fetch.scmUrl>1</camel-k-runtime.fetch.scmUrl>
     <camel-k-runtime.push.scmUrl>1</camel-k-runtime.push.scmUrl>
     <camel-k-runtime.buildCommand>1</camel-k-runtime.buildCommand>
-    <camel-k.tag>DUMMY-TAG-0.0.0</camel-k.tag>
-    <camel-k.fetch.scmUrl>1</camel-k.fetch.scmUrl>
-    <camel-k.push.scmUrl>1</camel-k.push.scmUrl>
-    <camel-k.buildCommand>1</camel-k.buildCommand>
+    <camel-k.tag>master</camel-k.tag>
+    <camel-k.fetch.scmUrl>git%40github.com%3Aapache%2Fcamel-k.git</camel-k.fetch.scmUrl>
+    <camel-k.push.scmUrl>git%40github.com%3Ajboss-fuse%2Fcamel-k.git</camel-k.push.scmUrl>
+    <camel-k.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+</camel-k.buildCommand>
 
     <!-- Syndesis project -->
     <atlasmap.tag>DUMMY-TAG-0.0.0</atlasmap.tag>
