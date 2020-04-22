@@ -72,7 +72,7 @@ builds:
 
     export MAVEN_OPTS=\"-Xmx4g\"
     
-    mvn -e -V -B -DskipTests -DfailIfNoTests=false -Dtest=false -Penable-schemagen,release,apt
+    mvn -e -V -B -Dmaven.test.skip.exec=true -DskipTests -DfailIfNoTests=false -Dtest=false -Penable-schemagen,release,apt
     clean deploy -DkeepStagingRepositoryOnCloseRuleFailure=true -Dgpg.skip=true -pl
     '!org.apache.camel:camel-itest,!org.apache.camel.example:camel-example-swagger-xml'
   buildPodMemory: 12
