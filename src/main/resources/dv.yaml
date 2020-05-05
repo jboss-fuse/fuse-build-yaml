@@ -10,7 +10,7 @@ defaultBuildParameters:
   environmentId: 7
   buildScript: 'mvn -e -V -B -DskipTests -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean clean
     deploy'
-  
+
 builds:
 - name: oreva-${version.fuse.prefix}
   project: teiid/oreva
@@ -36,7 +36,7 @@ builds:
   externalScmUrl: ssh://git@github.com/jboss-fuse/teiid.git
   scmRevision: teiid-${version.teiid}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
-  customPmeParameters:
+  customPmeParameters:-DskipTests 
     - ${teiid.pme.options}
   buildScript: >
      mvn -e -V -B -Dmaven.test.skip=true  -DskipTests -DfailIfNoTests=false -Dtest=false -Dgpg.skip=true -Pcore-release clean deploy
