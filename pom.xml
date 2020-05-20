@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.7.0.redhat-SNAPSHOT</version>
+  <version>1.0.0.ipt-base-100001</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -86,7 +86,7 @@
 
     <version.camel-k-runtime>1.0.0.fuse-730005</version.camel-k-runtime>
     <version.karaf-quickstarts>7.3.0.fuse-730010</version.karaf-quickstarts>
-    <version.apicurio-registry>7.3.0.fuse-730010</version.apicurio-registry>
+    <version.apicurio-registry>1.2.1.ipt-100002</version.apicurio-registry>
 
     <!-- boosters -->
     <version.fuse-configmap-booster>1</version.fuse-configmap-booster>
@@ -98,7 +98,7 @@
     <!-- build information -->
     <build.milestone>ER1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Ffusesource-jenkins.rhev-ci-vms.eng.rdu2.redhat.com%2Fjob%2Fipt-1.0-base%2F9%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
@@ -288,7 +288,7 @@
     <oreva.buildCommand>1</oreva.buildCommand>
 
     <!-- Fuse Service Registry -->
-    <apicurito-registry.version>1</apicurito-registry.version>
+    <apicurito-registry.version>1.2.1.ipt-100002</apicurito-registry.version>
     <apicurito-registry.tag>DUMMY-TAG-0.0.0</apicurito-registry.tag>
     <apicurito-registry.fetch.scmUrl>1</apicurito-registry.fetch.scmUrl>
     <apicurito-registry.push.scmUrl>1</apicurito-registry.push.scmUrl>
