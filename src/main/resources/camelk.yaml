@@ -3,16 +3,16 @@ product:
   abbreviation: Fuse-and-FIS
   stage: ${build.milestone}
   issueTrackerUrl: http://issues.jboss.org/browse/ENTESB
-version: ${version.fuse.prefix}
+version: ${version.camelk.project}
 milestone: ${build.milestone}
-group: Red Hat Fuse - Camel K ${version.fuse.project} TP3 ${build.milestone}
+group: Red Hat Fuse - Camel K ${version.camelk.project} ${build.milestone}
 defaultBuildParameters:
   environmentId: 21
   buildScript: 'mvn -e -V -B -DskipTests -DfailIfNoTests=false -Dtest=false clean
     deploy'
 
 builds:
-- name: kamelet-catalog-1.0-${version.fuse.prefix}
+- name: kamelet-catalog-1.0-${version.camelk.project}
     #fetchScmUrl: ${kamelet-catalog.fetch.scmUrl}
     #pushScmUrl: ${kamelet-catalog.push.scmUrl}
     #tag: kamelet-catalog-${version.kamelet-catalog}
@@ -28,7 +28,7 @@ builds:
   alignmentParameters:
     - ${kamelet-catalog.pme.options}
 
-- name: camel-k-runtime-1.7.0-${version.fuse.prefix}
+- name: camel-k-runtime-1.7.0-${version.camelk.project}
     #fetchScmUrl: ${camel-k-runtime.fetch.scmUrl}
     #pushScmUrl: ${camel-k-runtime.push.scmUrl}
     #tag: camel-k-runtime-${version.camel-k-runtime}
@@ -44,7 +44,7 @@ builds:
   alignmentParameters:
     - ${camel-k-runtime.pme.options}
 
-- name: camel-k-${version.fuse.prefix}
+- name: camel-k-${version.camelk.project}
     #fetchScmUrl: ${camel-k.fetch.scmUrl}
     #pushScmUrl: ${camel-k.push.scmUrl}
     #tag: camel-k-${version.camel-k}
@@ -60,7 +60,7 @@ builds:
   alignmentParameters:
     - ${camel-k.pme.options}
   dependencies:
-    - camel-k-runtime-1.7.0-${version.fuse.prefix}
+    - camel-k-runtime-1.7.0-${version.camelk.project}
 
 outputPrefixes:
   releaseFile: fuse-test
