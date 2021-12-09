@@ -1,11 +1,11 @@
 product:
-  name: Red Hat Fuse
-  abbreviation: Fuse-and-FIS
+  name: Camel Extensions for Quarkus 
+  abbreviation: camel-quarkus
   stage: ${build.milestone}
   issueTrackerUrl: http://issues.jboss.org/browse/ENTESB
 version: ${version.fuse.prefix}
 milestone: ${build.milestone}
-group: Red Hat Fuse - Camel Quarkus ${version.fuse.project} TP3 ${build.milestone}
+group: Camel Extensions for Quarkus ${version.fuse.project} ${build.milestone}
 defaultBuildParameters:
   environmentId: 21
   buildScript: 'mvn -e -V -B -DskipTests -DfailIfNoTests=false -Dtest=false clean
@@ -77,8 +77,8 @@ builds:
     - camel-3.11.1-${version.fuse.prefix}
 
 outputPrefixes:
-  releaseFile: fuse-test
-  releaseDir: fuse-test
+  releaseFile: rhi-camel-extensions-for-quarkus
+  releaseDir: rhi-camel-extensions-for-quarkus
 
 flow:
   licensesGeneration:
@@ -86,14 +86,7 @@ flow:
 
   repositoryGeneration:
     strategy: BUILD_GROUP
-  #licensesGeneration: gen.downloadFrom 'karaf' matching '.*license\.zip'
-  #licensesGeneration: gen.generate()
-  #repositoryGeneration: gen.downloadFrom 'karaf' matching '.*-m2repo\.zip'
-  #javadocGeneration: gen.downloadFrom 'karaf' matching '.*javadoc\.zip'
-  #addons:
-  #runtimeDependenciesAnalyzer:
-  #  downloadFrom: 'WildFly-Swarm'
-  #  matching: '.*runtime-dependencies\.zip'
-  #  referenceBuild: 'WildFly-Swarm'
 addons:
   notYetAlignedFromDependencyTree:
+  offlineManifestGenerator: 
+    offlineManifestFileName: rhi-camel-extensions-for-quarkus-${version.fuse.project}.txt
