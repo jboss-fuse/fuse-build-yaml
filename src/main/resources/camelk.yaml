@@ -1,11 +1,11 @@
 product:
-  name: Red Hat Fuse
-  abbreviation: Fuse-and-FIS
+  name: Camel K
+  abbreviation: camel-k
   stage: ${build.milestone}
   issueTrackerUrl: http://issues.jboss.org/browse/ENTESB
 version: ${version.camelk.project}
 milestone: ${build.milestone}
-group: Red Hat Fuse - Camel K ${version.camelk.project} ${build.milestone}
+group: Camel K ${version.camelk.project} ${build.milestone}
 defaultBuildParameters:
   environmentId: 21
   buildScript: 'mvn -e -V -B -DskipTests -DfailIfNoTests=false -Dtest=false clean
