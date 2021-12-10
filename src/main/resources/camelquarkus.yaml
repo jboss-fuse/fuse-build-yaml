@@ -58,8 +58,8 @@ builds:
     - camel-3.11.1-${version.camel-quarkus.project}
 
 outputPrefixes:
-  releaseFile: fuse-test
-  releaseDir: fuse-test
+  releaseFile: rhi-camel-extensions-for-quarkus
+  releaseDir: rhi-camel-extensions-for-quarkus
 
 flow:
   licensesGeneration:
@@ -67,14 +67,7 @@ flow:
 
   repositoryGeneration:
     strategy: BUILD_GROUP
-  #licensesGeneration: gen.downloadFrom 'karaf' matching '.*license\.zip'
-  #licensesGeneration: gen.generate()
-  #repositoryGeneration: gen.downloadFrom 'karaf' matching '.*-m2repo\.zip'
-  #javadocGeneration: gen.downloadFrom 'karaf' matching '.*javadoc\.zip'
-  #addons:
-  #runtimeDependenciesAnalyzer:
-  #  downloadFrom: 'WildFly-Swarm'
-  #  matching: '.*runtime-dependencies\.zip'
-  #  referenceBuild: 'WildFly-Swarm'
 addons:
   notYetAlignedFromDependencyTree:
+  offlineManifestGenerator: 
+    offlineManifestFileName: rhi-camel-extensions-for-quarkus-${version.camel-quarkus.project}.txt
