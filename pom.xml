@@ -50,8 +50,8 @@
     <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
     <version.syndesis>1.6.4.fuse-730002</version.syndesis>
     <version.atlasmap>1.40.0.fuse-740007</version.atlasmap>
-    <version.camel>3.11.1.fuse-800024</version.camel>
-    <version.camel-quarkus>2.2.0.fuse-800020</version.camel-quarkus>
+    <version.camel>3.11.1.fuse-800025-1</version.camel>
+    <version.camel-quarkus>2.2.0.fuse-800021-2</version.camel-quarkus>
     <version.camel-kafka-connector>0.0.1.fuse-800001</version.camel-kafka-connector>
     <version.camel.extra>2.21.0.fuse-000073</version.camel.extra>
     <version.fuse.extras.distro>7.2.0.fuse-720046</version.fuse.extras.distro>
