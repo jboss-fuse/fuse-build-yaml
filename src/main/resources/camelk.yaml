@@ -56,7 +56,7 @@ builds:
   environmentId: 308
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
   buildScript: >
-   sed -i "s/-ldflags/-mod=vendor -ldflags/g" Makefile; mvn clean package deploy -Pgolang-build -Durl=${AProxDeployUrl} -DrepositoryId=indy-mvn dependency:tree
+   sed -i "s/-ldflags/-mod=vendor -ldflags/g" Makefile; mvn clean package deploy -f ci/pnc/pom.xml -Pgolang-build -Durl=${AProxDeployUrl} -DrepositoryId=indy-mvn dependency:tree; rm -rf ci
   alignmentParameters:
     - ${camel-k.pme.options}
   dependencies:
