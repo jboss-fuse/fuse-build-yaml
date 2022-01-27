@@ -1,6 +1,6 @@
 product:
   name: Camel K
-  abbreviation: camel-k
+  abbreviation: camelK
   stage: ${build.milestone}
   issueTrackerUrl: http://issues.jboss.org/browse/ENTESB
 version: ${version.camelk.project}
