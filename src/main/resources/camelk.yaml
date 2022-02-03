@@ -61,6 +61,7 @@ builds:
     - ${camel-k.pme.options}
   dependencies:
     - camel-k-runtime-1.7.0-${version.camelk.project}
+    - kamelet-catalog-1.0-${version.camelk.project}
 
 outputPrefixes:
   releaseFile: fuse-test
