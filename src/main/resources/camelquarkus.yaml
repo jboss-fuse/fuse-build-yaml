@@ -66,7 +66,14 @@ flow:
     strategy: GENERATE
 
   repositoryGeneration:
-    strategy: BUILD_GROUP
+    strategy: RESOLVE_ONLY
+    sourceBuild: camel-quarkus-2.2.1-2.2.1
+    sourceArtifact: 'camel-quarkus-bom-[\d]+.*.pom'
+    parameters:
+       extensionsListUrl: "https://gitlab.cee.redhat.com/fuse-prod/build-configurations/-/raw/camel-quarkus/camel-quarkus/extensionArtifactList.txt"
+    externalAdditionalArtifacts:
+      - 'io.quarkus:quarkus-maven-plugin:jar:2.2.5.Final-redhat-00005'
+      - 'io.quarkus:quarkus-maven-plugin:pom:2.2.5.Final-redhat-00005'
 addons:
   notYetAlignedFromDependencyTree:
   offlineManifestGenerator: 
