@@ -45,7 +45,7 @@ builds:
   scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/camel-quarkus.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/camel-quarkus.git
   scmRevision: camel-quarkus-${version.camel-quarkus}
-  environmentId: 110
+  environmentId: 240
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
   buildPodMemory: 12
   buildScript: >
