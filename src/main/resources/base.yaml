@@ -21,7 +21,6 @@ builds:
   scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/karaf.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/karaf.git
   scmRevision: karaf-${version.karaf}
-  brewPullActive: true
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
   alignmentParameters:
     - ${karaf.pme.options}
@@ -38,7 +37,6 @@ builds:
     mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false
     -Dcheckstyle.skip=true clean deploy dependency:tree
   scmRevision: cxf-xjc-utils-${version.cxf.xjc-utils}
-  brewPullActive: true
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
   alignmentParameters:
     - ${cxf-xjc-utils.pme.options}
@@ -52,7 +50,6 @@ builds:
   scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/docker-maven-plugin.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/docker-maven-plugin.git
   scmRevision: docker-maven-plugin-${docker.maven.plugin.version}
-  brewPullActive: true
   alignmentParameters:
     - ${docker-maven-plugin.pme.options}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false -Dgpg.skip=true -Prelease clean deploy dependency:tree'
@@ -67,7 +64,6 @@ builds:
   externalScmUrl: ssh://git@github.com/jboss-fuse/kubernetes-client.git
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip.exec=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree'
   scmRevision: kubernetes-client-${version.kubernetes.client}
-  brewPullActive: true
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
   customPmeParameters:
     - ${kubernetes-client.pme.options}
@@ -85,7 +81,6 @@ builds:
   externalScmUrl: ssh://git@github.com/jboss-fuse/arquillian-cube.git
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip.exec=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree'
   scmRevision: arquillian-cube-${version.arquillian-cube}
-  brewPullActive: true
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
   customPmeParameters:
     - ${arquillian-cube.pme.options}
