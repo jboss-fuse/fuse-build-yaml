@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.11.0.redhat-SNAPSHOT</version>
+  <version>7.11.0.fuse-base-7_11_0-00010</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -54,15 +54,15 @@
     <version.camel.extra>2.21.0.fuse-000073</version.camel.extra>
     <version.fuse.extras.distro>7.2.0.fuse-720046</version.fuse.extras.distro>
     <version.cxf>3.1.11.fuse-000265</version.cxf>
-    <version.arquillian-cube>1.18.2</version.arquillian-cube>
+    <version.arquillian-cube>1.8.2.fuse-7_11_0-00010</version.arquillian-cube>
     <version.fabric8>3.0.8.fuse-000051</version.fabric8>
     <version.kubernetes.assertions>4.1.0.fuse-sb2-750002</version.kubernetes.assertions>
     <version.fabric8.maven.plugin>3.5.33.fuse-000075</version.fabric8.maven.plugin>
     <version.bom.fuse>7.0.1.fuse-000002</version.bom.fuse>
-    <version.karaf>4.2.0.fuse-000262</version.karaf>
+    <version.karaf>4.2.15.fuse-7_11_0-00008</version.karaf>
     <version.bom.wildfly.camel>5.1.0.fuse-000071</version.bom.wildfly.camel>
     <version.fusesource.camel.sap>7.0.1.fuse-000002</version.fusesource.camel.sap>
-    <karaf.plugin.version>4.2.0.fuse-000262</karaf.plugin.version>
+    <karaf.plugin.version>4.2.15.fuse-7_11_0-00008</karaf.plugin.version>
     <narayana-spring-boot.version>1.0.3.fuse-730042</narayana-spring-boot.version>
     <spring-boot-camel-xa.version>1.0.0.fuse-730038</spring-boot-camel-xa.version>
     <spring-boot-camel-singleton-services-kubernetes.version>1.0</spring-boot-camel-singleton-services-kubernetes.version>
@@ -76,15 +76,15 @@
     <version.io.swagger.core.v3>1.0</version.io.swagger.core.v3>
 
     <version.kubernetes.model>2.0.9.fuse-000020</version.kubernetes.model>
-    <version.kubernetes.client>3.0.3.fuse-000056</version.kubernetes.client>
+    <version.kubernetes.client>4.6.2.fuse-7_11_0-00010</version.kubernetes.client>
 
     <version.application.templates>2.1.fuse-000087</version.application.templates>
-    <version.cxf.xjc-utils>3.1.1.fuse-000118</version.cxf.xjc-utils>
+    <version.cxf.xjc-utils>3.3.1.fuse-7_11_0-00009</version.cxf.xjc-utils>
     <version.ipaas.quickstarts>2.2.0.fuse-000098</version.ipaas.quickstarts>
     <version.spring-cloud-kubernetes>0.1.6.fuse-000056</version.spring-cloud-kubernetes>
     <version.wsdl2rest>0.7.0.fuse-000071</version.wsdl2rest>
 
-    <docker.maven.plugin.version>0.23.0.fuse-000051</docker.maven.plugin.version>
+    <docker.maven.plugin.version>0.31.0.fuse-7_11_0-00009</docker.maven.plugin.version>
     <version.fuse.patch>3.0.0.fuse-000069</version.fuse.patch>
     <version.wildfly.camel.examples>5.1.0.fuse-000047</version.wildfly.camel.examples>
     <version.fuse.eap>7.0.1.fuse-000001</version.fuse.eap>
@@ -103,7 +103,7 @@
     <!-- build information -->
     <build.milestone>ER1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Fci-jenkins-csb-fuse.apps.ocp-c1.prod.psi.redhat.com%2Fjob%2FFuse-7.11%2Fjob%2Fproductization-base-build%2F29%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
@@ -130,18 +130,18 @@
     <spring-boot-cxf-jaxws-xml.version>1.0.0.fuse-710004</spring-boot-cxf-jaxws-xml.version>
 
     <!-- Tag and SCM info -->
-    <karaf.tag>DUMMY-TAG-0.0.0</karaf.tag>
-    <karaf.fetch.scmUrl>1</karaf.fetch.scmUrl>
-    <karaf.push.scmUrl>1</karaf.push.scmUrl>
-    <karaf.buildCommand>1</karaf.buildCommand>
+    <karaf.tag>4.2.x.redhat-7-x</karaf.tag>
+    <karaf.fetch.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fkaraf.git</karaf.fetch.scmUrl>
+    <karaf.push.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fkaraf.git</karaf.push.scmUrl>
+    <karaf.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+-U+</karaf.buildCommand>
     <karaf-quickstarts.tag>DUMMY-TAG-0.0.0</karaf-quickstarts.tag>
     <karaf-quickstarts.fetch.scmUrl>1</karaf-quickstarts.fetch.scmUrl>
     <karaf-quickstarts.push.scmUrl>1</karaf-quickstarts.push.scmUrl>
     <karaf-quickstarts.buildCommand>1</karaf-quickstarts.buildCommand>
-    <cxf-xjc-utils.tag>DUMMY-TAG-0.0.0</cxf-xjc-utils.tag>
-    <cxf-xjc-utils.fetch.scmUrl>1</cxf-xjc-utils.fetch.scmUrl>
-    <cxf-xjc-utils.push.scmUrl>1</cxf-xjc-utils.push.scmUrl>
-    <cxf-xjc-utils.buildCommand>1</cxf-xjc-utils.buildCommand>
+    <cxf-xjc-utils.tag>3.3.x.redhat-7-x</cxf-xjc-utils.tag>
+    <cxf-xjc-utils.fetch.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fcxf-xjc-utils.git</cxf-xjc-utils.fetch.scmUrl>
+    <cxf-xjc-utils.push.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fcxf-xjc-utils.git</cxf-xjc-utils.push.scmUrl>
+    <cxf-xjc-utils.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+-Dcheckstyle.skip</cxf-xjc-utils.buildCommand>
     <swagger-core.tag>DUMMY-TAG-0.0.0</swagger-core.tag>
     <swagger-core.fetch.scmUrl>1</swagger-core.fetch.scmUrl>
     <swagger-core.push.scmUrl>1</swagger-core.push.scmUrl>
@@ -190,22 +190,22 @@
     <kubernetes-model.fetch.scmUrl>1</kubernetes-model.fetch.scmUrl>
     <kubernetes-model.push.scmUrl>1</kubernetes-model.push.scmUrl>
     <kubernetes-model.buildCommand>1</kubernetes-model.buildCommand>
-    <kubernetes-client.tag>DUMMY-TAG-0.0.0</kubernetes-client.tag>
-    <kubernetes-client.fetch.scmUrl>1</kubernetes-client.fetch.scmUrl>
-    <kubernetes-client.push.scmUrl>1</kubernetes-client.push.scmUrl>
-    <kubernetes-client.buildCommand>1</kubernetes-client.buildCommand>
-    <arquillian-cube.tag>DUMMY-TAG-0.0.0</arquillian-cube.tag>
-    <arquillian-cube.fetch.scmUrl>1</arquillian-cube.fetch.scmUrl>
-    <arquillian-cube.push.scmUrl>1</arquillian-cube.push.scmUrl>
-    <arquillian-cube.buildCommand>1</arquillian-cube.buildCommand>
+    <kubernetes-client.tag>4.6.2.redhat-7-x</kubernetes-client.tag>
+    <kubernetes-client.fetch.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fkubernetes-client.git</kubernetes-client.fetch.scmUrl>
+    <kubernetes-client.push.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fkubernetes-client.git</kubernetes-client.push.scmUrl>
+    <kubernetes-client.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+</kubernetes-client.buildCommand>
+    <arquillian-cube.tag>1.18.2.redhat-7-x</arquillian-cube.tag>
+    <arquillian-cube.fetch.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Farquillian-cube.git</arquillian-cube.fetch.scmUrl>
+    <arquillian-cube.push.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Farquillian-cube.git</arquillian-cube.push.scmUrl>
+    <arquillian-cube.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+</arquillian-cube.buildCommand>
     <spring-cloud-kubernetes.tag>DUMMY-TAG-0.0.0</spring-cloud-kubernetes.tag>
     <spring-cloud-kubernetes.fetch.scmUrl>1</spring-cloud-kubernetes.fetch.scmUrl>
     <spring-cloud-kubernetes.push.scmUrl>1</spring-cloud-kubernetes.push.scmUrl>
     <spring-cloud-kubernetes.buildCommand>1</spring-cloud-kubernetes.buildCommand>
-    <docker-maven-plugin.tag>DUMMY-TAG-0.0.0</docker-maven-plugin.tag>
-    <docker-maven-plugin.fetch.scmUrl>1</docker-maven-plugin.fetch.scmUrl>
-    <docker-maven-plugin.push.scmUrl>1</docker-maven-plugin.push.scmUrl>
-    <docker-maven-plugin.buildCommand>1</docker-maven-plugin.buildCommand>
+    <docker-maven-plugin.tag>0.31.x.redhat-7-x</docker-maven-plugin.tag>
+    <docker-maven-plugin.fetch.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fdocker-maven-plugin.git</docker-maven-plugin.fetch.scmUrl>
+    <docker-maven-plugin.push.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fdocker-maven-plugin.git</docker-maven-plugin.push.scmUrl>
+    <docker-maven-plugin.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+</docker-maven-plugin.buildCommand>
     <narayana-spring-boot.tag>DUMMY-TAG-0.0.0</narayana-spring-boot.tag>
     <narayana-spring-boot.fetch.scmUrl>1</narayana-spring-boot.fetch.scmUrl>
     <narayana-spring-boot.push.scmUrl>1</narayana-spring-boot.push.scmUrl>
