@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.11.1.redhat-SNAPSHOT</version>
+  <version>7.11.0.fuse-ipaas-7_11_1-00001</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -48,7 +48,7 @@
     <build.number>1</build.number>
     <dollar>$</dollar>
     <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
-    <version.syndesis>1.6.4.fuse-730002</version.syndesis>
+    <version.syndesis>1.14.0.fuse-7_11_1-00001</version.syndesis>
     <version.atlasmap>1.40.0.fuse-740007</version.atlasmap>
     <version.camel>2.21.0.fuse-000096</version.camel>
     <version.camel.extra>2.21.0.fuse-000073</version.camel.extra>
@@ -103,7 +103,7 @@
     <!-- build information -->
     <build.milestone>ER1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Fci-jenkins-csb-fuse.apps.ocp-c1.prod.psi.redhat.com%2Fjob%2FFuse-7.11%2Fjob%2Fproductization-ipaas-build%2F44%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
@@ -273,10 +273,10 @@
     <atlasmap.fetch.scmUrl>1</atlasmap.fetch.scmUrl>
     <atlasmap.push.scmUrl>1</atlasmap.push.scmUrl>
     <atlasmap.buildCommand>1</atlasmap.buildCommand>
-    <syndesis.tag>DUMMY-TAG-0.0.0</syndesis.tag>
-    <syndesis.fetch.scmUrl>1</syndesis.fetch.scmUrl>
-    <syndesis.push.scmUrl>1</syndesis.push.scmUrl>
-    <syndesis.buildCommand>1</syndesis.buildCommand>
+    <syndesis.tag>1.14.x</syndesis.tag>
+    <syndesis.fetch.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fsyndesis.git</syndesis.fetch.scmUrl>
+    <syndesis.push.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fsyndesis.git</syndesis.push.scmUrl>
+    <syndesis.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+-U+-DskipClean+-Dinvoker.skip%3Dtrue+-Dgpg.skip%3Dtrue+-f+app%2Fpom.xml</syndesis.buildCommand>
 
     <!-- Fuse Service Registry -->
     <apicurito-registry.version>1</apicurito-registry.version>
