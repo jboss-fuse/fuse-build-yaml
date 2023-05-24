@@ -12,37 +12,6 @@ defaultBuildParameters:
     deploy '
 
 builds:
-- name: karaf-4.2.12-${version.fuse.prefix}
-  project: jboss-fuse/karaf
-    #fetchScmUrl: ${karaf.fetch.scmUrl}
-    #pushScmUrl: ${karaf.push.scmUrl}
-    #tag: karaf-${version.karaf}
-    #buildCommand: ${karaf.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/karaf.git
-  externalScmUrl: ssh://git@github.com/jboss-fuse/karaf.git
-  scmRevision: karaf-${version.karaf}
-  pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
-  alignmentParameters:
-    - ${karaf.pme.options}
-
-- name: cxf-3.3.6-${version.fuse.prefix}
-  project: jboss-fuse/cxf
-    #fetchScmUrl: git%40github.com%3Ajboss-fuse%2Fcxf.git
-    #pushScmUrl: git%40github.com%3Ajboss-fuse%2Fcxf.git
-    #tag: ${cxf.tag}
-    #buildCommand: ${cxf.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/cxf.git
-  externalScmUrl: ssh://git@github.com/jboss-fuse/cxf.git
-  scmRevision: cxf-${version.cxf}
-  pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
-  buildPodMemory: 8
-  alignmentParameters:
-    - ${cxf.pme.options}
-  buildScript: >
-    mvn -e -V -B -Dmaven.test.skip=true -Dcheckstyle.skip=true -Dpmd.skip=true -Dassembly.tarLongFileMode=posix -DfailIfNoTests=false -Dtest=false -Dcxf.public.suffix.list.url=http://download-node-02.eng.bos.redhat.com/rcm-guest/staging/fuse/npm/public_suffix_list.dat -Pdeploy clean deploy
-  dependencies:
-  - karaf-4.2.12-${version.fuse.prefix}
-
 - name: redhat-fuse-${version.fuse.prefix}
   project: jboss-fuse/redhat-fuse
     #fetchScmUrl: ${redhat-fuse.fetch.scmUrl}
