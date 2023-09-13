@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.12.1.redhat-SNAPSHOT</version>
+  <version>7.12.1.fuse-boosters-7_12_1-00001</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -48,71 +48,71 @@
     <build.number>1</build.number>
     <dollar>$</dollar>
     <version.syndesis>1.15.0.fuse-7_12_0-00020</version.syndesis>
-    <version.atlasmap>2.3.19.fuse-7_12_0-00015</version.atlasmap>
-    <version.camel>2.23.2.fuse-7_12_0-00019</version.camel>
-    <version.camel.extra>2.23.2.fuse-7_12_0-00019</version.camel.extra>
-    <version.fuse.extras.distro>7.12.0.fuse-7_12_0-00019</version.fuse.extras.distro>
-    <version.cxf>3.3.6.fuse-7_12_0-00020</version.cxf>
+    <version.atlasmap>2.3.19.fuse-7_12_1-00001</version.atlasmap>
+    <version.camel>2.23.2.fuse-7_12_1-00001</version.camel>
+    <version.camel.extra>2.23.2.fuse-7_12_1-00001</version.camel.extra>
+    <version.fuse.extras.distro>7.12.1.fuse-7_12_1-00001</version.fuse.extras.distro>
+    <version.cxf>3.3.6.fuse-7_12_1-00001</version.cxf>
     <version.arquillian-cube>1.8.2.fuse-7_12_0-00015</version.arquillian-cube>
-    <version.bom.fuse>7.12.0.fuse-7_12_0-00019</version.bom.fuse>
+    <version.bom.fuse>7.12.1.fuse-7_12_1-00001</version.bom.fuse>
     <version.karaf>4.4.3.fuse-7_12_0-00014</version.karaf>
-    <version.bom.wildfly.camel>5.10.0.fuse-7_12_0-00017</version.bom.wildfly.camel>
-    <version.fusesource.camel.sap>7.12.0.fuse-7_12_0-00019</version.fusesource.camel.sap>
+    <version.bom.wildfly.camel>5.10.0.fuse-7_12_1-00002</version.bom.wildfly.camel>
+    <version.fusesource.camel.sap>7.12.1.fuse-7_12_1-00001</version.fusesource.camel.sap>
     <karaf.plugin.version>4.4.3.fuse-7_12_0-00014</karaf.plugin.version>
-    <narayana-spring-boot.version>2.1.1.fuse-7_12_0-00019</narayana-spring-boot.version>
-    <spring-boot-camel-xa.version>7.12.0.fuse-7_12_0-00016</spring-boot-camel-xa.version>
-    <spring-boot-camel-singleton-services-kubernetes.version>7.12.0.fuse-7_12_0-00019</spring-boot-camel-singleton-services-kubernetes.version>
-    <version.application-templates>2.1.0.fuse-7_12_0-00017</version.application-templates>
-    <fuse-bom.version>7.12.0.fuse-7_12_0-00016</fuse-bom.version>
-    <version.hawtio>2.0.0.fuse-7_12_0-00019</version.hawtio>
-    <version.hawtio.online>1.0.0.fuse-7_12_0-00002</version.hawtio.online>
+    <narayana-spring-boot.version>2.1.1.fuse-7_12_1-00001</narayana-spring-boot.version>
+    <spring-boot-camel-xa.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-xa.version>
+    <spring-boot-camel-singleton-services-kubernetes.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-singleton-services-kubernetes.version>
+    <version.application-templates>2.1.0.fuse-7_12_1-00001</version.application-templates>
+    <fuse-bom.version>7.12.1.fuse-7_12_1-00001</fuse-bom.version>
+    <version.hawtio>2.0.0.fuse-7_12_1-00001</version.hawtio>
+    <version.hawtio.online>1.0.0-7_12_0-00002.fuse-7_12_1-00001</version.hawtio.online>
 
     <version.kubernetes.client>4.6.2.fuse-7_12_0-00015</version.kubernetes.client>
 
     <version.cxf.xjc-utils>3.3.1.fuse-7_12_0-00009</version.cxf.xjc-utils>
-    <version.ipaas.quickstarts>2.2.0.fuse-7_12_0-00018</version.ipaas.quickstarts>
-    <version.wsdl2rest>0.8.0.fuse-7_12_0-00019</version.wsdl2rest>
+    <version.ipaas.quickstarts>2.2.0.fuse-7_12_1-00002</version.ipaas.quickstarts>
+    <version.wsdl2rest>0.8.0.fuse-7_12_1-00001</version.wsdl2rest>
 
     <docker.maven.plugin.version>0.31.0.fuse-7_12_0-00011</docker.maven.plugin.version>
-    <version.fuse.patch>3.4.0.fuse-7_12_0-00009</version.fuse.patch>
-    <version.wildfly.camel.examples>5.10.0.fuse-7_12_0-00014</version.wildfly.camel.examples>
-    <version.fuse.eap>7.12.0.fuse-7_12_0-00013</version.fuse.eap>
+    <version.fuse.patch>3.4.0.fuse-7_12_1-00001</version.fuse.patch>
+    <version.wildfly.camel.examples>5.10.0.fuse-7_12_1-00001</version.wildfly.camel.examples>
+    <version.fuse.eap>7.12.1.fuse-7_12_1-00001</version.fuse.eap>
 
-    <version.karaf-quickstarts>7.12.0.fuse-7_12_0-00016</version.karaf-quickstarts>
+    <version.karaf-quickstarts>7.12.1.fuse-7_12_1-00001</version.karaf-quickstarts>
 
     <!-- boosters -->
-    <version.fuse-configmap-booster>7.0.0.fuse-7_12_0-00014</version.fuse-configmap-booster>
-    <version.fuse-health-check-booster>7.0.0.fuse-7_12_0-00014</version.fuse-health-check-booster>
-    <fuse-istio-distributed-tracing-booster.version>7.0.0.fuse-7_12_0-00015</fuse-istio-distributed-tracing-booster.version>
-    <fuse-rest-http-booster.version>7.0.0.fuse-7_12_0-00014</fuse-rest-http-booster.version>
-    <fuse-springboot-circuit-breaker-booster.version>7.0.0.fuse-7_12_0-00014</fuse-springboot-circuit-breaker-booster.version>
+    <version.fuse-configmap-booster>7.0.0.fuse-7_12_1-00001</version.fuse-configmap-booster>
+    <version.fuse-health-check-booster>7.0.0.fuse-7_12_1-00001</version.fuse-health-check-booster>
+    <fuse-istio-distributed-tracing-booster.version>7.0.0.fuse-7_12_1-00001</fuse-istio-distributed-tracing-booster.version>
+    <fuse-rest-http-booster.version>7.0.0.fuse-7_12_1-00001</fuse-rest-http-booster.version>
+    <fuse-springboot-circuit-breaker-booster.version>7.0.0.fuse-7_12_1-00001</fuse-springboot-circuit-breaker-booster.version>
 
     <!-- build information -->
     <build.milestone>ER1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Fci-jenkins-csb-fuse.apps.ocp-c1.prod.psi.redhat.com%2Fjob%2FFuse-7.12%2Fjob%2Fproductization-sb2-boosters-build%2F19%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
 
     <!-- quickstarts -->
-    <karaf-camel-amq.version>7.12.0.fuse-7_12_0-00021</karaf-camel-amq.version>
-    <karaf-camel-log.version>7.12.0.fuse-7_12_0-00021</karaf-camel-log.version>
-    <karaf-camel-rest-sql.version>7.12.0.fuse-7_12_0-00021</karaf-camel-rest-sql.version>
-    <karaf-cxf-rest.version>7.12.0.fuse-7_12_0-00021</karaf-cxf-rest.version>
-    <spring-boot-camel.version>7.12.0.fuse-7_12_0-00021</spring-boot-camel.version>
-    <spring-boot-camel-amq.version>7.12.0.fuse-7_12_0-00020</spring-boot-camel-amq.version>
-    <spring-boot-camel-config.version>7.12.0.fuse-7_12_0-00020</spring-boot-camel-config.version>
-    <spring-boot-camel-drools.version>7.12.0.fuse-7_12_0-00019</spring-boot-camel-drools.version>
-    <spring-boot-camel-infinispan.version>7.12.0.fuse-7_12_0-00019</spring-boot-camel-infinispan.version>
-    <spring-boot-camel-rest-sql.version>7.12.0.fuse-7_12_0-00016</spring-boot-camel-rest-sql.version>
-    <spring-boot-camel-rest-3scale.version>7.12.0.fuse-7_12_0-00019</spring-boot-camel-rest-3scale.version>
-    <spring-boot-camel-xml.version>7.12.0.fuse-7_12_0-00019</spring-boot-camel-xml.version>
-    <spring-boot-camel-soap-rest-bridge.version>7.12.0.fuse-7_12_0-00019</spring-boot-camel-soap-rest-bridge.version>
-    <spring-boot-cxf-jaxrs.version>7.12.0.fuse-7_12_0-00019</spring-boot-cxf-jaxrs.version>
-    <spring-boot-cxf-jaxws.version>7.12.0.fuse-7_12_0-00019</spring-boot-cxf-jaxws.version>
-    <spring-boot-cxf-jaxrs-xml.version>7.12.0.fuse-7_12_0-00018</spring-boot-cxf-jaxrs-xml.version>
-    <spring-boot-cxf-jaxws-xml.version>7.12.0.fuse-7_12_0-00018</spring-boot-cxf-jaxws-xml.version>
+    <karaf-camel-amq.version>7.12.1.fuse-7_12_1-00001</karaf-camel-amq.version>
+    <karaf-camel-log.version>7.12.1.fuse-7_12_1-00001</karaf-camel-log.version>
+    <karaf-camel-rest-sql.version>7.12.1.fuse-7_12_1-00001</karaf-camel-rest-sql.version>
+    <karaf-cxf-rest.version>7.12.1.fuse-7_12_1-00001</karaf-cxf-rest.version>
+    <spring-boot-camel.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel.version>
+    <spring-boot-camel-amq.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-amq.version>
+    <spring-boot-camel-config.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-config.version>
+    <spring-boot-camel-drools.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-drools.version>
+    <spring-boot-camel-infinispan.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-infinispan.version>
+    <spring-boot-camel-rest-sql.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-rest-sql.version>
+    <spring-boot-camel-rest-3scale.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-rest-3scale.version>
+    <spring-boot-camel-xml.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-xml.version>
+    <spring-boot-camel-soap-rest-bridge.version>7.12.1.fuse-7_12_1-00001</spring-boot-camel-soap-rest-bridge.version>
+    <spring-boot-cxf-jaxrs.version>7.12.1.fuse-7_12_1-00001</spring-boot-cxf-jaxrs.version>
+    <spring-boot-cxf-jaxws.version>7.12.1.fuse-7_12_1-00001</spring-boot-cxf-jaxws.version>
+    <spring-boot-cxf-jaxrs-xml.version>7.12.1.fuse-7_12_1-00001</spring-boot-cxf-jaxrs-xml.version>
+    <spring-boot-cxf-jaxws-xml.version>7.12.1.fuse-7_12_1-00001</spring-boot-cxf-jaxws-xml.version>
 
     <!-- Tag and SCM info -->
     <karaf.tag>DUMMY-TAG-0.0.0</karaf.tag>
@@ -191,7 +191,7 @@
     <wildfly-camel.fetch.scmUrl>1</wildfly-camel.fetch.scmUrl>
     <wildfly-camel.push.scmUrl>1</wildfly-camel.push.scmUrl>
     <wildfly-camel.buildCommand>1</wildfly-camel.buildCommand>
-    <apicurito.version>1</apicurito.version>
+    <apicurito.version>1.2.5.fuse-7_12_1-00001</apicurito.version>
     <apicurito.tag>DUMMY-TAG-0.0.0</apicurito.tag>
     <apicurito.fetch.scmUrl>1</apicurito.fetch.scmUrl>
     <apicurito.push.scmUrl>1</apicurito.push.scmUrl>
@@ -200,7 +200,7 @@
     <redhat-fuse.fetch.scmUrl>1</redhat-fuse.fetch.scmUrl>
     <redhat-fuse.push.scmUrl>1</redhat-fuse.push.scmUrl>
     <redhat-fuse.buildCommand>1</redhat-fuse.buildCommand>
-    <version.apicurito-generator>1</version.apicurito-generator>
+    <version.apicurito-generator>1.0.0.fuse-7_12_1-00001</version.apicurito-generator>
     <fuse-apicurito-generator.tag>DUMMY-TAG-0.0.0</fuse-apicurito-generator.tag>
     <fuse-apicurito-generator.fetch.scmUrl>1</fuse-apicurito-generator.fetch.scmUrl>
     <fuse-apicurito-generator.push.scmUrl>1</fuse-apicurito-generator.push.scmUrl>
