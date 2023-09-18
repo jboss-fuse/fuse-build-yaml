@@ -22,7 +22,7 @@
 
   <groupId>com.redhat.fuse</groupId>
   <artifactId>fuse-build-yaml</artifactId>
-  <version>7.12.1.redhat-SNAPSHOT</version>
+  <version>7.12.0.fuse-patch-7_12_0-00003</version>
   <packaging>pom</packaging>
   <name>Fuse Build YAML</name>
   <description>Fuse Build YAML descriptor generator</description>
@@ -54,7 +54,7 @@
     <version.fuse.extras.distro>7.12.0.fuse-7_12_0-00019</version.fuse.extras.distro>
     <version.cxf>3.3.6.fuse-7_12_0-00020</version.cxf>
     <version.arquillian-cube>1.8.2.fuse-7_12_0-00015</version.arquillian-cube>
-    <version.bom.fuse>7.12.0.fuse-7_12_0-00019</version.bom.fuse>
+    <version.bom.fuse>7.12.0.fuse-7_12_0-00022</version.bom.fuse>
     <version.karaf>4.4.3.fuse-7_12_0-00014</version.karaf>
     <version.bom.wildfly.camel>5.10.0.fuse-7_12_0-00017</version.bom.wildfly.camel>
     <version.fusesource.camel.sap>7.12.0.fuse-7_12_0-00019</version.fusesource.camel.sap>
@@ -63,7 +63,7 @@
     <spring-boot-camel-xa.version>7.12.0.fuse-7_12_0-00016</spring-boot-camel-xa.version>
     <spring-boot-camel-singleton-services-kubernetes.version>7.12.0.fuse-7_12_0-00019</spring-boot-camel-singleton-services-kubernetes.version>
     <version.application-templates>2.1.0.fuse-7_12_0-00017</version.application-templates>
-    <fuse-bom.version>7.12.0.fuse-7_12_0-00016</fuse-bom.version>
+    <fuse-bom.version>7.12.0.fuse-7_12_0-00019</fuse-bom.version>
     <version.hawtio>2.0.0.fuse-7_12_0-00019</version.hawtio>
     <version.hawtio.online>1.0.0.fuse-7_12_0-00002</version.hawtio.online>
 
@@ -90,7 +90,7 @@
     <!-- build information -->
     <build.milestone>ER1</build.milestone>
     <port.number>49159</port.number>
-    <build.url>1</build.url>
+    <build.url>https%3A%2F%2Fci-jenkins-csb-fuse.apps.ocp-c1.prod.psi.redhat.com%2Fjob%2FFuse-Maintenance%2Fjob%2Ffuse-7.12-maintenance%2F3%2F</build.url>
 
     <!-- pom manipulation scripts version (global) -->
     <version.pom-manipulation>1.0.8.redhat-00001</version.pom-manipulation>
@@ -159,10 +159,10 @@
     <hawtio-online.fetch.scmUrl>1</hawtio-online.fetch.scmUrl>
     <hawtio-online.push.scmUrl>1</hawtio-online.push.scmUrl>
     <hawtio-online.buildCommand>1</hawtio-online.buildCommand>
-    <fuse-karaf.tag>DUMMY-TAG-0.0.0</fuse-karaf.tag>
-    <fuse-karaf.fetch.scmUrl>1</fuse-karaf.fetch.scmUrl>
-    <fuse-karaf.push.scmUrl>1</fuse-karaf.push.scmUrl>
-    <fuse-karaf.buildCommand>1</fuse-karaf.buildCommand>
+    <fuse-karaf.tag>7.x.redhat-7-12-0</fuse-karaf.tag>
+    <fuse-karaf.fetch.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Ffuse-karaf.git</fuse-karaf.fetch.scmUrl>
+    <fuse-karaf.push.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Ffuse-karaf.git</fuse-karaf.push.scmUrl>
+    <fuse-karaf.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+-U+-Dorg.ops4j.pax.url.mvn.socket.readTimeout%3D50000+-Dorg.ops4j.pax.url.mvn.socket.connectionTimeout%3D50000+</fuse-karaf.buildCommand>
     <kubernetes-client.tag>DUMMY-TAG-0.0.0</kubernetes-client.tag>
     <kubernetes-client.fetch.scmUrl>1</kubernetes-client.fetch.scmUrl>
     <kubernetes-client.push.scmUrl>1</kubernetes-client.push.scmUrl>
@@ -196,10 +196,10 @@
     <apicurito.fetch.scmUrl>1</apicurito.fetch.scmUrl>
     <apicurito.push.scmUrl>1</apicurito.push.scmUrl>
     <apicurito.buildCommand>1</apicurito.buildCommand>
-    <redhat-fuse.tag>DUMMY-TAG-0.0.0</redhat-fuse.tag>
-    <redhat-fuse.fetch.scmUrl>1</redhat-fuse.fetch.scmUrl>
-    <redhat-fuse.push.scmUrl>1</redhat-fuse.push.scmUrl>
-    <redhat-fuse.buildCommand>1</redhat-fuse.buildCommand>
+    <redhat-fuse.tag>7.x.redhat-7-12-0</redhat-fuse.tag>
+    <redhat-fuse.fetch.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fredhat-fuse.git</redhat-fuse.fetch.scmUrl>
+    <redhat-fuse.push.scmUrl>https%3A%2F%2Fgithub.com%2Fjboss-fuse%2Fredhat-fuse.git</redhat-fuse.push.scmUrl>
+    <redhat-fuse.buildCommand>mvn+-e+-V+-B+-DskipTests+-DfailIfNoTests%3Dfalse+-Dtest%3Dfalse+-P+clean+install+-U+-Pmaintenance</redhat-fuse.buildCommand>
     <version.apicurito-generator>1</version.apicurito-generator>
     <fuse-apicurito-generator.tag>DUMMY-TAG-0.0.0</fuse-apicurito-generator.tag>
     <fuse-apicurito-generator.fetch.scmUrl>1</fuse-apicurito-generator.fetch.scmUrl>
