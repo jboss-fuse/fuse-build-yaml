@@ -7,7 +7,7 @@ version: ${version.fuse.prefix}
 milestone: ${build.milestone}
 group: Red Hat Fuse - iPaaS ${version.fuse.project} ${build.milestone}
 defaultBuildParameters:
-  environmentId: 7
+  environmentId: 419
   buildScript: 'mvn -e -V -B -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean
     deploy '
 
@@ -22,7 +22,7 @@ builds:
   scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/syndesis.git
   scmRevision: syndesis-${version.syndesis}
   buildPodMemory: 12
-  environmentId: 34
+  environmentId: 662
   alignmentParameters:
     - ${syndesis.pme.options}
   buildScript: >
