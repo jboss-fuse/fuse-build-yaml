@@ -18,7 +18,7 @@ builds:
     #pushScmUrl: git%40github.com%3Ajboss-fuse%2Fcxf.git
     #tag: ${cxf.tag}
     #buildCommand: ${cxf.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/cxf.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/cxf.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/cxf.git
   scmRevision: cxf-${version.cxf}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -34,7 +34,7 @@ builds:
     #pushScmUrl: ${camel.push.scmUrl}
     #tag: ${camel.tag}
     #buildCommand: ${camel.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/camel.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/camel.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/camel.git
   scmRevision: camel-${version.camel}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -60,7 +60,7 @@ builds:
     #pushScmUrl: ${camel-extra.push.scmUrl}
     #tag: camel-extra-${version.camel.extra}
     #buildCommand: ${camel-extra.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/camel-extra.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/camel-extra.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/camel-extra.git
   scmRevision: camel-extra-${version.camel.extra}
   alignmentParameters:
@@ -74,7 +74,7 @@ builds:
     #pushScmUrl: ${fuse-extras-distro.push.scmUrl}
     #tag: fuse-extras-distro-${version.fuse.extras.distro}
     #buildCommand: ${fuse-extras-distro.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-extras-distro.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-extras-distro.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-extras-distro.git
   scmRevision: fuse-extras-distro-${version.fuse.extras.distro}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -91,7 +91,7 @@ builds:
     #tag: wsdl2rest-${version.wsdl2rest}
     #buildCommand: ${wsdl2rest.buildCommand}
     #cherrypick: true
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/wsdl2rest.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/wsdl2rest.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/wsdl2rest.git
   scmRevision: wsdl2rest-${version.wsdl2rest}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -107,7 +107,7 @@ builds:
     #tag: fuse-components-${version.fusesource.camel.sap}
     #buildCommand: ${fuse-components.buildCommand}
     #cherrypick: true
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-components.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-components.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-components.git
   scmRevision: fuse-components-${version.fusesource.camel.sap}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -133,7 +133,7 @@ builds:
     #tag: hawtio-${version.hawtio}
     #buildCommand: ${hawtio.buildCommand}
     #cherrypick: true
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/hawtio.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/hawtio.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/hawtio.git
   scmRevision: hawtio-${version.hawtio}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -164,7 +164,7 @@ builds:
     #pushScmUrl: ${apicurito.push.scmUrl}
     #tag: apicurito-${apicurito.version}
     #buildCommand: ${apicurito.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/apicurito.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/apicurito.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/apicurito.git
   scmRevision: apicurito-${apicurito.version}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -187,7 +187,7 @@ builds:
     #pushScmUrl: ${wildfly-camel.push.scmUrl}
     #tag: wildfly-camel-${version.bom.wildfly.camel}
     #buildCommand: ${wildfly-camel.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/wildfly-camel.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/wildfly-camel.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/wildfly-camel.git
   scmRevision: wildfly-camel-${version.bom.wildfly.camel}
   environmentId: 33
@@ -211,7 +211,7 @@ builds:
     #pushScmUrl: ${fuse-patch.push.scmUrl}
     #tag: fuse-patch-${version.fuse.patch}
     #buildCommand: ${fuse-patch.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/fuse-patch.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fuse-patch.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-patch.git
   scmRevision: fuse-patch-${version.fuse.patch}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -225,8 +225,7 @@ builds:
     #pushScmUrl: ${atlasmap.push.scmUrl}
     #tag: atlasmap-${version.atlasmap}
     #buildCommand: ${atlasmap.buildCommand}
-    #externalScmUrl: git+https://code.engineering.redhat.com/gerrit/atlasmap/atlasmap.git
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/atlasmap.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/atlasmap.git
   scmRevision: atlasmap-${version.atlasmap}
   alignmentParameters:
     - ${atlasmap.pme.options}
@@ -247,7 +246,7 @@ builds:
     #pushScmUrl: ${redhat-fuse.push.scmUrl}
     #tag: ${redhat-fuse.tag}
     #buildCommand: ${redhat-fuse.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/redhat-fuse.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/redhat-fuse.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/redhat-fuse.git
   scmRevision: redhat-fuse-${fuse-bom.version}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -269,7 +268,7 @@ builds:
     #pushScmUrl: ${wildfly-camel-examples.push.scmUrl}
     #tag: wildfly-camel-examples-${version.wildfly.camel.examples}
     #buildCommand: ${wildfly-camel-examples.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/wildfly-extras/wildfly-camel-examples.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/wildfly-extras/wildfly-camel-examples.git
   externalScmUrl: ssh://git@github.com/wildfly-extras/wildfly-camel-examples.git
   scmRevision: wildfly-camel-examples-${version.wildfly.camel.examples}
   environmentId: 33
@@ -290,7 +289,7 @@ builds:
     #tag: fuse-eap-${version.fuse.eap}
     #buildCommand: ${fuse-eap.buildCommand}
   project: jboss-fuse/fuse-eap
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-eap.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-eap.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-eap.git
   scmRevision: fuse-eap-${version.fuse.eap}
   environmentId: 33
@@ -313,7 +312,7 @@ builds:
     #tag: karaf-quickstarts-${version.karaf-quickstarts}
     #buildCommand: ${karaf-quickstarts.buildCommand}
   project: jboss-fuse/karaf-quickstarts
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/karaf-quickstarts.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/karaf-quickstarts.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/karaf-quickstarts.git
   scmRevision: karaf-quickstarts-${version.karaf-quickstarts}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -326,7 +325,7 @@ builds:
 
 - name: karaf-camel-amq-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/karaf-camel-amq
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/karaf-camel-amq.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/karaf-camel-amq.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/karaf-camel-amq.git
   scmRevision: karaf-camel-amq-${karaf-camel-amq.version}
   buildScript: 'mvn -e -V -B  -DaltDeploymentRepository=indy-mvn::${AProxDeployUrl} -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -337,7 +336,7 @@ builds:
 
 - name: karaf-camel-log-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/karaf-camel-log
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/karaf-camel-log.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/karaf-camel-log.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/karaf-camel-log.git
   scmRevision: karaf-camel-log-${karaf-camel-log.version}
   buildScript: 'mvn -e -V -B  -DaltDeploymentRepository=indy-mvn::${AProxDeployUrl} -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -348,7 +347,7 @@ builds:
 
 - name: karaf-camel-rest-sql-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/karaf-camel-rest-sql
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/karaf-camel-rest-sql.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/karaf-camel-rest-sql.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/karaf-camel-rest-sql.git
   scmRevision: karaf-camel-rest-sql-${karaf-camel-rest-sql.version}
   buildScript: 'mvn -e -V -B  -DaltDeploymentRepository=indy-mvn::${AProxDeployUrl} -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -359,7 +358,7 @@ builds:
 
 - name: karaf-cxf-rest-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/karaf-cxf-rest
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/karaf-cxf-rest.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/karaf-cxf-rest.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/karaf-cxf-rest.git
   scmRevision: karaf-cxf-rest-${karaf-cxf-rest.version}
   buildScript: 'mvn -e -V -B  -DaltDeploymentRepository=indy-mvn::${AProxDeployUrl} -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -374,7 +373,7 @@ builds:
     #tag: ${spring-boot-camel-xa.tag}
     #buildCommand: ${spring-boot-camel-xa.buildCommand}
   project: jboss-fuse/spring-boot-camel-xa
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/spring-boot-camel-xa.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/spring-boot-camel-xa.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/spring-boot-camel-xa.git
   scmRevision: spring-boot-camel-xa-${spring-boot-camel-xa.version}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -387,7 +386,7 @@ builds:
 
 - name: spring-boot-camel-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel.git
   scmRevision: spring-boot-camel-${spring-boot-camel.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -398,7 +397,7 @@ builds:
 
 - name: spring-boot-camel-singleton-services-kubernetes-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-singleton-services-kubernetes
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-singleton-services-kubernetes.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-singleton-services-kubernetes.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-singleton-services-kubernetes.git
   scmRevision: spring-boot-camel-singleton-services-kubernetes-${spring-boot-camel-singleton-services-kubernetes.version}
   buildScript: 'mvn -e -V -B -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -409,7 +408,7 @@ builds:
 
 - name: spring-boot-camel-amq-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-amq
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-amq.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-amq.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-amq.git
   scmRevision: spring-boot-camel-amq-${spring-boot-camel-amq.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -420,7 +419,7 @@ builds:
 
 - name: spring-boot-camel-config-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-config
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-config.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-config.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-config.git
   scmRevision: spring-boot-camel-config-${spring-boot-camel-config.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -431,7 +430,7 @@ builds:
 
 - name: spring-boot-camel-drools-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-drools
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-drools.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-drools.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-drools.git
   scmRevision: spring-boot-camel-drools-${spring-boot-camel-drools.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -442,7 +441,7 @@ builds:
 
 - name: spring-boot-camel-infinispan-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-infinispan
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-infinispan.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-infinispan.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-infinispan.git
   scmRevision: spring-boot-camel-infinispan-${spring-boot-camel-infinispan.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -453,7 +452,7 @@ builds:
 
 - name: spring-boot-camel-rest-sql-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-rest-sql
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-rest-sql.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-rest-sql.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-rest-sql.git
   scmRevision: spring-boot-camel-rest-sql-${spring-boot-camel-rest-sql.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -464,7 +463,7 @@ builds:
 
 - name: spring-boot-camel-rest-3scale-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-rest-3scale
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-rest-3scale.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-rest-3scale.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-rest-3scale.git
   scmRevision: spring-boot-camel-rest-3scale-${spring-boot-camel-rest-3scale.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -475,7 +474,7 @@ builds:
 
 - name: spring-boot-camel-xml-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-xml
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-xml.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-xml.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-xml.git
   scmRevision: spring-boot-camel-xml-${spring-boot-camel-xml.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -486,7 +485,7 @@ builds:
 
 - name: spring-boot-camel-soap-rest-bridge-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-camel-soap-rest-bridge
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-camel-soap-rest-bridge.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-camel-soap-rest-bridge.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-camel-soap-rest-bridge.git
   scmRevision: spring-boot-camel-soap-rest-bridge-${spring-boot-camel-soap-rest-bridge.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -497,7 +496,7 @@ builds:
 
 - name: spring-boot-cxf-jaxrs-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-cxf-jaxrs
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-cxf-jaxrs.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-cxf-jaxrs.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-cxf-jaxrs.git
   scmRevision: spring-boot-cxf-jaxrs-${spring-boot-cxf-jaxrs.version}
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -508,7 +507,7 @@ builds:
 
 - name: spring-boot-cxf-jaxws-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-cxf-jaxws
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-cxf-jaxws.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-cxf-jaxws.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-cxf-jaxws.git
   scmRevision: spring-boot-cxf-jaxws-${spring-boot-cxf-jaxws.version}
   buildScript: 'mvn -e -V -B -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -519,7 +518,7 @@ builds:
 
 - name: spring-boot-cxf-jaxrs-xml-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-cxf-jaxrs-xml
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-cxf-jaxrs-xml.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-cxf-jaxrs-xml.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-cxf-jaxrs-xml.git
   scmRevision: spring-boot-cxf-jaxrs-xml-${spring-boot-cxf-jaxrs-xml.version}
   buildScript: 'mvn -e -V -B -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -530,7 +529,7 @@ builds:
 
 - name: spring-boot-cxf-jaxws-xml-1.0.0-${version.fuse.prefix}
   project: fabric8-quickstarts/spring-boot-cxf-jaxws-xml
-  scmUrl: git+ssh://code.engineering.redhat.com/fabric8-quickstarts/spring-boot-cxf-jaxws-xml.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/spring-boot-cxf-jaxws-xml.git
   externalScmUrl: ssh://git@github.com/fabric8-quickstarts/spring-boot-cxf-jaxws-xml.git
   scmRevision: spring-boot-cxf-jaxws-xml-${spring-boot-cxf-jaxws-xml.version}
   buildScript: 'mvn -e -V -B -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean'
@@ -546,11 +545,11 @@ builds:
     #tag: ipaas-quickstarts-${version.ipaas.quickstarts}
     #buildCommand: ${ipaas-quickstarts.buildCommand}
     #cherrypick: true
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/ipaas-quickstarts.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/ipaas-quickstarts.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/ipaas-quickstarts.git
   scmRevision: ipaas-quickstarts-${version.ipaas.quickstarts}
   buildScript: >
-    mvn -e -V -B -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false -Dquickstarts.url.base=https://code.engineering.redhat.com/gerrit/fabric8-quickstarts -Dquickstart.git.repos=target/extra-resources/repolist.txt -Dgpg.skip -Prelease clean deploy dependency:tree
+    mvn -e -V -B -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false -Dquickstarts.url.base=https://gitlab.cee.redhat.com/pnc-workspace/fabric8-quickstarts -Dquickstart.git.repos=target/extra-resources/repolist.txt -Dgpg.skip -Prelease clean deploy dependency:tree
   alignmentParameters:
     - ${ipaas-quickstarts.pme.options}
   dependencies:
@@ -582,7 +581,7 @@ builds:
     #pushScmUrl: ${fuse-karaf.push.scmUrl}
     #tag: fuse-karaf-${version.bom.fuse}
     #buildCommand: ${fuse-karaf.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-karaf.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-karaf.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-karaf.git
   scmRevision: fuse-karaf-${version.bom.fuse}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -601,7 +600,7 @@ builds:
     #pushScmUrl: ${fuse-apicurito-generator.push.scmUrl}
     #tag: fuse-apicurito-generator-${version.apicurito-generator}
     #buildCommand: ${fuse-apicurito-generator.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-apicurito-generator.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-apicurito-generator.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-apicurito-generator.git
   scmRevision: fuse-apicurito-generator-${version.apicurito-generator}
   buildScript: mvn -e -V -B -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree -DskipClean
@@ -616,7 +615,7 @@ builds:
     #tag: ${narayana-spring-boot.tag}
     #buildCommand: ${narayana-spring-boot.buildCommand}
   project: jboss-fuse/narayana-spring-boot
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/narayana-spring-boot.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/narayana-spring-boot.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/narayana-spring-boot.git
   scmRevision: narayana-spring-boot-${narayana-spring-boot.version}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -632,7 +631,7 @@ builds:
     #tag: apicurio-registry-${version.application-templates}
     #buildCommand: ${application-templates.buildCommand}
   project: jboss-fuse/application-templates
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse-application-templates.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse-application-templates.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/application-templates.git
   scmRevision: application-templates-${version.application-templates}
   buildScript: 'mvn -B clean deploy dependency:tree -Dmaven.test.skip=true -Pprod -Pkafka -Pjpa'
@@ -649,7 +648,7 @@ builds:
     #tag: hawtio-online-${version.hawtio.online}
     #buildCommand: ${hawtio-online.buildCommand}
     #cherrypick: true
-  scmUrl: git+ssh://code.engineering.redhat.com/hawtio/hawtio-online.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/hawtio/hawtio-online.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/hawtio-online.git
   scmRevision: hawtio-online-${version.hawtio.online}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
