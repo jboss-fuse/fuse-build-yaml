@@ -413,7 +413,7 @@
            <replacements>
                <replacement>
                    <token>code.engineering</token>
-                   <value>code.stage.engineering</value>
+                   <value>gitlab.cee.redhat.com/pnc-workspace/</value>
                </replacement>
            </replacements>
        </configuration>
