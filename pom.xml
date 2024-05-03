@@ -412,8 +412,8 @@
           </includes>
            <replacements>
                <replacement>
-                   <token>code.engineering</token>
-                   <value>code.stage.engineering</value>
+                   <token>pnc-workspace</token>
+                   <value>pnc-stage-workspace</value>
                </replacement>
            </replacements>
        </configuration>

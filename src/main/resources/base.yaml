@@ -18,7 +18,7 @@ builds:
     #pushScmUrl: ${karaf.push.scmUrl}
     #tag: karaf-${version.karaf}
     #buildCommand: ${karaf.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/karaf.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/karaf.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/karaf.git
   scmRevision: karaf-${version.karaf}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -31,7 +31,7 @@ builds:
     #pushScmUrl: ${cxf-xjc-utils.push.scmUrl}
     #tag: cxf-xjc-utils-${version.cxf.xjc-utils}
     #buildCommand: ${cxf-xjc-utils.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/cxf-xjc-utils.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/cxf-xjc-utils.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/cxf-xjc-utils.git
   buildScript: >
     mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false
@@ -47,7 +47,7 @@ builds:
     #pushScmUrl: ${docker-maven-plugin.push.scmUrl}
     #tag: docker-maven-plugin-${docker.maven.plugin.version}
     #buildCommand: ${docker-maven-plugin.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/docker-maven-plugin.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/docker-maven-plugin.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/docker-maven-plugin.git
   scmRevision: docker-maven-plugin-${docker.maven.plugin.version}
   alignmentParameters:
@@ -60,7 +60,7 @@ builds:
     #pushScmUrl: ${kubernetes-client.push.scmUrl}
     #tag: kubernetes-client-${version.kubernetes.client}
     #buildCommand: ${kubernetes-client.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/kubernetes-client.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/kubernetes-client.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/kubernetes-client.git
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip.exec=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree'
   scmRevision: kubernetes-client-${version.kubernetes.client}
@@ -77,7 +77,7 @@ builds:
     #pushScmUrl: ${arquillian-cube.push.scmUrl}
     #tag: arquillian-cube-${version.arquillian-cube}
     #buildCommand: ${arquillian-cube.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/arquillian-cube.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/arquillian-cube.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/arquillian-cube.git
   buildScript: 'mvn -e -V -B  -Dmaven.test.skip.exec=true -DfailIfNoTests=false -Dtest=false clean deploy dependency:tree'
   scmRevision: arquillian-cube-${version.arquillian-cube}
