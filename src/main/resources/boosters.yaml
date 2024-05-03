@@ -18,7 +18,7 @@ builds:
     #pushScmUrl: ${fuse-configmap-booster.scmUrl}
     #tag: fuse-configmap-booster-${version.fuse-configmap-booster}
     #buildCommand: ${fuse-configmap-booster.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-configmap-booster.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-configmap-booster.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-configmap-booster.git
   scmRevision: fuse-configmap-booster-${version.fuse-configmap-booster}
   pigYamlMetadata: Fuse dev build ${build.url} Fuse ${yaml.name} yaml config ${project.version}
@@ -33,7 +33,7 @@ builds:
     #pushScmUrl: ${fuse-health-check-booster.push.scmUrl}
     #tag: fuse-health-check-booster-${version.fuse-health-check-booster}
     #buildCommand: ${fuse-health-check-booster.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-health-check-booster.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-health-check-booster.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-health-check-booster.git
   buildScript: >
     mvn -e -V -B  -Dmaven.test.skip=true -DfailIfNoTests=false -Dtest=false
@@ -51,7 +51,7 @@ builds:
     #pushScmUrl: ${fuse-istio-distributed-tracing-booster.push.scmUrl}
     #tag: fuse-istio-distributed-tracing-booster-${fuse-istio-distributed-tracing-booster.version}
     #buildCommand: ${fuse-istio-distributed-tracing-booster.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-istio-distributed-tracing-booster.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-istio-distributed-tracing-booster.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-istio-distributed-tracing-booster.git
   scmRevision: fuse-istio-distributed-tracing-booster-${fuse-istio-distributed-tracing-booster.version}
   alignmentParameters:
@@ -66,7 +66,7 @@ builds:
     #pushScmUrl: ${fuse-rest-http-booster.push.scmUrl}
     #tag: fuse-rest-http-booster-${fuse-rest-http-booster.version}
     #buildCommand: ${fuse-rest-http-booster.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-rest-http-booster.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-rest-http-booster.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-rest-http-booster.git
   scmRevision: fuse-rest-http-booster-${fuse-rest-http-booster.version}
   alignmentParameters:
@@ -81,7 +81,7 @@ builds:
     #pushScmUrl: ${fuse-springboot-circuit-breaker-booster.push.scmUrl}
     #tag: fuse-springboot-circuit-breaker-booster-${fuse-springboot-circuit-breaker-booster.version}
     #buildCommand: ${fuse-springboot-circuit-breaker-booster.buildCommand}
-  scmUrl: git+ssh://code.engineering.redhat.com/jboss-fuse/fuse-springboot-circuit-breaker-booster.git
+  scmUrl: git@gitlab.cee.redhat.com:pnc-workspace/jboss-fuse/fuse-springboot-circuit-breaker-booster.git
   externalScmUrl: ssh://git@github.com/jboss-fuse/fuse-springboot-circuit-breaker-booster.git
   scmRevision: fuse-springboot-circuit-breaker-booster-${fuse-springboot-circuit-breaker-booster.version}
   alignmentParameters:

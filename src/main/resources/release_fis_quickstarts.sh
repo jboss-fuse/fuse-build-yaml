@@ -5,7 +5,7 @@ function release() {
   echo "======================================================================"
   git clone git@github.com:fabric8-quickstarts/$1.git	
   cd $1
-  git remote add prod ssh://code.engineering.redhat.com/fabric8-quickstarts/$1.git
+  git remote add prod git@gitlab.cee.redhat.com:pnc-workspace/fabric8-quickstarts/$1.git
   git fetch prod
   git checkout -b $1-$2-redhat prod/$1-$2-redhat
   OLD_VERSION=`cat pom.xml | grep "<version>" | head -n 1 | sed 's/<version>\(.*\)<\/version>/\1/' | tr -d '[[:space:]]'`
