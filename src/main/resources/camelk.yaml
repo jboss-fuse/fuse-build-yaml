@@ -64,8 +64,8 @@ builds:
     - kamelet-catalog-1.0-${version.camelk.project}
 
 outputPrefixes:
-  releaseFile: fuse-test
-  releaseDir: fuse-test
+  releaseFile: rhi-camel-k
+  releaseDir: rhi-camel-k
 
 flow:
   licensesGeneration:
